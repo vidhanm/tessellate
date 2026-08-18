@@ -8,8 +8,9 @@ Status board for the discovery phase. One row per stream; agents append findings
 | Twitter/X complaints & threads | sonnet | done | twitter/findings.md |
 | Forums (Quora, TeamBHP, IndiaMike, LocalCircles, Trak.in, Medium) | sonnet | done | forums/findings.md |
 | News / RTI / CAG / parliamentary Qs on portal failures | sonnet | done | news/findings.md |
-| Synthesis + idea ranking | opus | pending | synthesis/ideas.md |
+| Synthesis + idea ranking | opus | done | synthesis/ideas.md |
 
 ## Log
 - 2026-08-18: repo initialised, streams kicked off.
 - 2026-08-19: all 4 research streams complete; synthesis (opus) started.
+- 2026-08-19: synthesis complete → research/synthesis/ideas.md (top-5 concepts + recommendation).
