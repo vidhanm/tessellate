@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/*
+  Saral's design constraints, stated once:
+  - mobile-first; every touch target at least 44px
+  - system fonts only, so nothing blocks first paint on a slow connection
+  - high contrast, because this gets used in daylight on cheap screens
+*/
+
+@theme {
+  --color-ink: #10151c;
+  --color-ink-soft: #4a5460;
+  --color-ink-faint: #6b7684;
+  --color-paper: #ffffff;
+  --color-surface: #f5f6f8;
+  --color-line: #dfe3e8;
+  --color-brand: #14532d;
+  --color-brand-soft: #e8f2ec;
+  --color-accent: #b45309;
+  --color-danger: #9f1239;
+  --color-danger-soft: #fdf0f3;
+  --color-warn: #92400e;
+  --color-warn-soft: #fdf6e8;
+  --color-pass: #14532d;
+  --color-pass-soft: #e8f2ec;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* Room for the fixed progress bar at the bottom. */
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Never let a mis-sized element scroll the whole page sideways. */
+body {
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

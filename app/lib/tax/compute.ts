@@ -26,7 +26,7 @@ export const NEW_REGIME_SLABS: Slab[] = [
 
 /** Old regime slabs, individual below 60. */
 export const OLD_REGIME_SLABS: Slab[] = [
-  { upto: 250_000, rate: 0.05 * 0 },
+  { upto: 250_000, rate: 0 },
   { upto: 500_000, rate: 0.05 },
   { upto: 1_000_000, rate: 0.2 },
   { upto: Infinity, rate: 0.3 },

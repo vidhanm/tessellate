@@ -1,0 +1,101 @@
+{
+  "_comment": "Stands in for what the Income Tax Department's systems would return: 26AS/AIS reconciliation, CPC validation rules, the officer-side queue and sample notices. None of this touches a real government system.",
+  "cpcRules": [
+    { "id": "ais-salary-match", "title": "Salary matches Form 26AS", "description": "The salary you declared is compared against every Form 24Q your employers filed.", "severity": "fail" },
+    { "id": "ais-interest-match", "title": "Interest income matches AIS", "description": "Banks report your interest under SFT-016 whether or not you declare it.", "severity": "warn" },
+    { "id": "tds-credit-match", "title": "TDS claimed is available in 26AS", "description": "You cannot claim credit for tax your deductor has not actually deposited.", "severity": "fail" },
+    { "id": "cg-securities-match", "title": "Share sales reported in SFT-017 are accounted for", "description": "Your broker reports gross sale value; the department expects to see a capital gains schedule.", "severity": "fail" },
+    { "id": "bank-prevalidated", "title": "Refund bank account is pre-validated", "description": "An unvalidated account silently fails the refund, months later.", "severity": "warn" },
+    { "id": "80c-limit", "title": "Chapter VI-A claims within statutory limits", "description": "Claims above the section cap are trimmed automatically at processing.", "severity": "fail" },
+    { "id": "regime-election", "title": "Regime election is consistent", "description": "Opting out of the new regime for business income requires Form 10-IEA before the due date.", "severity": "warn" },
+    { "id": "everify-window", "title": "Return e-verified within 30 days", "description": "An unverified return is treated as never filed at all.", "severity": "fail" }
+  ],
+  "officerQueue": [
+    {
+      "id": "case-1",
+      "ackNumber": "IT2026273841902",
+      "taxpayer": "Rahul Desai",
+      "pan": "AXKPD9876L",
+      "form": "ITR-2",
+      "refundClaimed": 48200,
+      "state": "processing",
+      "riskScore": 34,
+      "checks": [
+        { "id": "ais-salary-match", "title": "Salary matches Form 26AS", "status": "pass", "detail": "₹21,80,000 declared against ₹21,80,000 reported." },
+        { "id": "cg-securities-match", "title": "Capital gains schedule present", "status": "pass", "detail": "SFT-017 sale value ₹14,20,000 reconciled to Schedule CG." },
+        { "id": "ais-interest-match", "title": "Interest income matches AIS", "status": "warn", "detail": "Declared ₹34,500 against ₹34,500 reported, but a second bank has not yet filed.", "fix": "No action; awaiting deductor filing." }
+      ]
+    },
+    {
+      "id": "case-2",
+      "ackNumber": "IT2026273841903",
+      "taxpayer": "Arun Verma",
+      "pan": "CDFPV2211N",
+      "form": "ITR-1",
+      "refundClaimed": 0,
+      "state": "notice_issued",
+      "riskScore": 71,
+      "checks": [
+        { "id": "ais-salary-match", "title": "Salary matches Form 26AS", "status": "fail", "detail": "Declared ₹8,80,000 against ₹15,00,000 across two employers.", "fix": "Add the salary from the previous employer and re-file." },
+        { "id": "tds-credit-match", "title": "TDS claimed is available in 26AS", "status": "pass", "detail": "₹35,000 claimed, ₹35,000 deposited." },
+        { "id": "everify-window", "title": "Return e-verified within 30 days", "status": "pass", "detail": "Verified by Aadhaar OTP on day 2." }
+      ]
+    },
+    {
+      "id": "case-3",
+      "ackNumber": "IT2026273841904",
+      "taxpayer": "Priya Nair",
+      "pan": "ABCPN1234K",
+      "form": "ITR-1",
+      "refundClaimed": 41000,
+      "state": "processed_refund",
+      "riskScore": 8,
+      "checks": [
+        { "id": "ais-salary-match", "title": "Salary matches Form 26AS", "status": "pass", "detail": "₹9,40,000 declared and reported." },
+        { "id": "ais-interest-match", "title": "Interest income matches AIS", "status": "pass", "detail": "₹8,400 declared and reported." },
+        { "id": "bank-prevalidated", "title": "Refund bank account pre-validated", "status": "pass", "detail": "Federal Bank account validated on 12 June." }
+      ]
+    },
+    {
+      "id": "case-4",
+      "ackNumber": "IT2026273841905",
+      "taxpayer": "Meera Sharma",
+      "pan": "BQTPS4567M",
+      "form": "ITR-4",
+      "refundClaimed": 92400,
+      "state": "filed",
+      "riskScore": 46,
+      "checks": [
+        { "id": "tds-credit-match", "title": "TDS claimed is available in 26AS", "status": "pass", "detail": "₹1,86,000 claimed under 194J, fully deposited." },
+        { "id": "regime-election", "title": "Regime election consistent", "status": "warn", "detail": "Old regime chosen with presumptive income; Form 10-IEA acknowledgement not yet linked.", "fix": "File Form 10-IEA before the due date." },
+        { "id": "everify-window", "title": "Return e-verified within 30 days", "status": "fail", "detail": "Filed 6 days ago, not yet verified.", "fix": "E-verify by Aadhaar OTP." }
+      ]
+    }
+  ],
+  "notices": [
+    {
+      "id": "notice-1",
+      "section": "143(1)(a)",
+      "issuedOn": "2026-07-28",
+      "summary": "Variance between salary declared and salary reported by deductors",
+      "plainEnglish": "Two employers reported paying you this year, and your return only mentions one of them. The department has added the missing salary and recalculated your tax.",
+      "suggestedAction": "If both employers really did pay you, agree with the adjustment and pay the shortfall. If one entry is wrong, disagree and attach the correct Form 16.",
+      "responseDeadline": "2026-08-27"
+    },
+    {
+      "id": "notice-2",
+      "section": "139(9)",
+      "issuedOn": "2026-08-04",
+      "summary": "Defective return — capital gains schedule missing",
+      "plainEnglish": "Your broker told the department you sold shares, but the form you filed has nowhere to report that. The return is treated as defective until you re-file on the right form.",
+      "suggestedAction": "Re-file on ITR-2 with the capital gains schedule completed, within 15 days.",
+      "responseDeadline": "2026-08-19"
+    }
+  ],
+  "timeline": [
+    { "state": "filed", "label": "Filed", "description": "Your return reached the department's servers and got an acknowledgement number.", "typicalDays": 0 },
+    { "state": "everified", "label": "Verified", "description": "You confirmed it was really you. Without this within 30 days, the return does not exist.", "typicalDays": 1 },
+    { "state": "processing", "label": "Processing", "description": "CPC Bengaluru runs its automated checks against 26AS, AIS and SFT reports.", "typicalDays": 21 },
+    { "state": "processed_refund", "label": "Refund issued", "description": "Intimation u/s 143(1) issued and the refund credited to your pre-validated account.", "typicalDays": 35 }
+  ]
+}

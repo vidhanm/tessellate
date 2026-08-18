@@ -1,0 +1,231 @@
+{
+  "personas": [
+    {
+      "id": "priya",
+      "name": "Priya Nair",
+      "tagline": "First job, first return",
+      "age": 24,
+      "city": "Kochi",
+      "pan": "ABCPN1234K",
+      "story": "Joined a services company 14 months ago. Her employer deducted TDS every month and handed her a Form 16 she has never opened. She has a savings account, no investments, and a persistent fear that filing wrong means jail.",
+      "sources": {
+        "salary": true,
+        "housePropertyCount": 0,
+        "housePropertyLoss": false,
+        "otherSources": true,
+        "capitalGains": false,
+        "business": false,
+        "presumptiveBusiness": false,
+        "agriculturalIncome": 0,
+        "foreignAssetsOrIncome": false,
+        "directorInCompany": false,
+        "unlistedShares": false,
+        "cryptoVDA": false
+      },
+      "form16": {
+        "employerName": "Antler Services Pvt Ltd",
+        "tan": "CHEA01234B",
+        "grossSalary": 940000,
+        "exemptAllowances": 96000,
+        "professionalTax": 2500,
+        "tdsDeducted": 41000,
+        "declared80C": 48000,
+        "declared80D": 0
+      },
+      "ais": [
+        { "id": "ais-p1", "category": "salary", "description": "Salary received from Antler Services Pvt Ltd", "amount": 940000, "source": "Form 24Q", "taxpayerDisputes": false },
+        { "id": "ais-p2", "category": "interest", "description": "Savings account interest, Federal Bank", "amount": 8400, "source": "SFT-016", "taxpayerDisputes": false },
+        { "id": "ais-p3", "category": "tds", "description": "TDS deducted by employer", "amount": 41000, "source": "Form 26AS", "taxpayerDisputes": false }
+      ],
+      "trades": [],
+      "taxInput": {
+        "grossSalary": 940000,
+        "exemptAllowances": 96000,
+        "housePropertyIncome": 0,
+        "interestIncome": 8400,
+        "dividendIncome": 0,
+        "otherIncome": 0,
+        "shortTermCapitalGains": 0,
+        "longTermCapitalGains": 0,
+        "businessIncome": 0,
+        "deduction80C": 48000,
+        "deduction80D": 0,
+        "deduction80TTA": 8400,
+        "professionalTax": 2500,
+        "tdsPaid": 41000,
+        "advanceTaxPaid": 0,
+        "age": 24
+      }
+    },
+    {
+      "id": "rahul",
+      "name": "Rahul Desai",
+      "tagline": "Salary plus a Zerodha account",
+      "age": 31,
+      "city": "Pune",
+      "pan": "AXKPD9876L",
+      "story": "Four years into a product role, with a home loan and a broking account he opened during the pandemic. He sold some shares last year and has no idea that this alone changes which form he must file.",
+      "sources": {
+        "salary": true,
+        "housePropertyCount": 1,
+        "housePropertyLoss": true,
+        "otherSources": true,
+        "capitalGains": true,
+        "business": false,
+        "presumptiveBusiness": false,
+        "agriculturalIncome": 0,
+        "foreignAssetsOrIncome": false,
+        "directorInCompany": false,
+        "unlistedShares": false,
+        "cryptoVDA": false
+      },
+      "form16": {
+        "employerName": "Braid Software India Pvt Ltd",
+        "tan": "PNEB05512C",
+        "grossSalary": 2180000,
+        "exemptAllowances": 288000,
+        "professionalTax": 2500,
+        "tdsDeducted": 322000,
+        "declared80C": 150000,
+        "declared80D": 26000
+      },
+      "ais": [
+        { "id": "ais-r1", "category": "salary", "description": "Salary received from Braid Software India Pvt Ltd", "amount": 2180000, "source": "Form 24Q", "taxpayerDisputes": false },
+        { "id": "ais-r2", "category": "interest", "description": "Savings and fixed deposit interest, HDFC Bank", "amount": 34500, "source": "SFT-016", "taxpayerDisputes": false },
+        { "id": "ais-r3", "category": "dividend", "description": "Dividend from listed companies", "amount": 12800, "source": "SFT-015", "taxpayerDisputes": false },
+        { "id": "ais-r4", "category": "securities", "description": "Sale of listed equity shares", "amount": 1420000, "source": "SFT-017", "taxpayerDisputes": false },
+        { "id": "ais-r5", "category": "tds", "description": "TDS deducted by employer", "amount": 322000, "source": "Form 26AS", "taxpayerDisputes": false }
+      ],
+      "trades": [
+        { "id": "t-r1", "broker": "Zerodha", "symbol": "INFY", "quantity": 300, "buyDate": "2022-06-14", "sellDate": "2025-08-02", "buyValue": 428000, "sellValue": 585000, "gainType": "ltcg" },
+        { "id": "t-r2", "broker": "Zerodha", "symbol": "TATAMOTORS", "quantity": 400, "buyDate": "2025-01-20", "sellDate": "2025-11-11", "buyValue": 296000, "sellValue": 341000, "gainType": "stcg" },
+        { "id": "t-r3", "broker": "Zerodha", "symbol": "HDFCBANK", "quantity": 200, "buyDate": "2021-03-08", "sellDate": "2025-09-19", "buyValue": 268000, "sellValue": 494000, "gainType": "ltcg" }
+      ],
+      "taxInput": {
+        "grossSalary": 2180000,
+        "exemptAllowances": 288000,
+        "housePropertyIncome": -200000,
+        "interestIncome": 34500,
+        "dividendIncome": 12800,
+        "otherIncome": 0,
+        "shortTermCapitalGains": 45000,
+        "longTermCapitalGains": 383000,
+        "businessIncome": 0,
+        "deduction80C": 150000,
+        "deduction80D": 26000,
+        "deduction80TTA": 10000,
+        "professionalTax": 2500,
+        "tdsPaid": 322000,
+        "advanceTaxPaid": 15000,
+        "age": 31
+      }
+    },
+    {
+      "id": "meera",
+      "name": "Meera Sharma",
+      "tagline": "Freelance designer, presumptive scheme",
+      "age": 28,
+      "city": "Jaipur",
+      "pan": "BQTPS4567M",
+      "story": "Left an agency to freelance two years ago. Clients deduct TDS under 194J, she keeps no books, and she has heard the words 'forty-four ADA' without knowing they are the reason her filing can stay simple.",
+      "sources": {
+        "salary": false,
+        "housePropertyCount": 0,
+        "housePropertyLoss": false,
+        "otherSources": true,
+        "capitalGains": false,
+        "business": false,
+        "presumptiveBusiness": true,
+        "agriculturalIncome": 0,
+        "foreignAssetsOrIncome": false,
+        "directorInCompany": false,
+        "unlistedShares": false,
+        "cryptoVDA": false
+      },
+      "form16": null,
+      "ais": [
+        { "id": "ais-m1", "category": "other", "description": "Professional receipts from 7 clients", "amount": 1860000, "source": "Form 26Q", "taxpayerDisputes": false },
+        { "id": "ais-m2", "category": "tds", "description": "TDS u/s 194J deducted by clients", "amount": 186000, "source": "Form 26AS", "taxpayerDisputes": false },
+        { "id": "ais-m3", "category": "interest", "description": "Savings account interest, ICICI Bank", "amount": 11200, "source": "SFT-016", "taxpayerDisputes": false }
+      ],
+      "trades": [],
+      "taxInput": {
+        "grossSalary": 0,
+        "exemptAllowances": 0,
+        "housePropertyIncome": 0,
+        "interestIncome": 11200,
+        "dividendIncome": 0,
+        "otherIncome": 0,
+        "shortTermCapitalGains": 0,
+        "longTermCapitalGains": 0,
+        "businessIncome": 930000,
+        "deduction80C": 60000,
+        "deduction80D": 18000,
+        "deduction80TTA": 10000,
+        "professionalTax": 0,
+        "tdsPaid": 186000,
+        "advanceTaxPaid": 0,
+        "age": 28
+      }
+    },
+    {
+      "id": "arun",
+      "name": "Arun Verma",
+      "tagline": "Two employers in one year",
+      "age": 27,
+      "city": "Bengaluru",
+      "pan": "CDFPV2211N",
+      "story": "Switched jobs in September. Both employers gave him a Form 16, both applied the full standard deduction and the full basic exemption, and neither knew about the other. His TDS is short and he does not yet know it.",
+      "sources": {
+        "salary": true,
+        "housePropertyCount": 0,
+        "housePropertyLoss": false,
+        "otherSources": true,
+        "capitalGains": false,
+        "business": false,
+        "presumptiveBusiness": false,
+        "agriculturalIncome": 0,
+        "foreignAssetsOrIncome": false,
+        "directorInCompany": false,
+        "unlistedShares": false,
+        "cryptoVDA": false
+      },
+      "form16": {
+        "employerName": "Nimbus Retail Tech (Sept–Mar)",
+        "tan": "BLRN07781D",
+        "grossSalary": 880000,
+        "exemptAllowances": 0,
+        "professionalTax": 1200,
+        "tdsDeducted": 26000,
+        "declared80C": 0,
+        "declared80D": 0
+      },
+      "ais": [
+        { "id": "ais-a1", "category": "salary", "description": "Salary from Kestrel Labs (Apr–Aug)", "amount": 620000, "source": "Form 24Q", "taxpayerDisputes": false },
+        { "id": "ais-a2", "category": "salary", "description": "Salary from Nimbus Retail Tech (Sept–Mar)", "amount": 880000, "source": "Form 24Q", "taxpayerDisputes": false },
+        { "id": "ais-a3", "category": "tds", "description": "TDS by Kestrel Labs", "amount": 9000, "source": "Form 26AS", "taxpayerDisputes": false },
+        { "id": "ais-a4", "category": "tds", "description": "TDS by Nimbus Retail Tech", "amount": 26000, "source": "Form 26AS", "taxpayerDisputes": false },
+        { "id": "ais-a5", "category": "interest", "description": "Savings account interest, Axis Bank", "amount": 6100, "source": "SFT-016", "taxpayerDisputes": false }
+      ],
+      "trades": [],
+      "taxInput": {
+        "grossSalary": 1500000,
+        "exemptAllowances": 0,
+        "housePropertyIncome": 0,
+        "interestIncome": 6100,
+        "dividendIncome": 0,
+        "otherIncome": 0,
+        "shortTermCapitalGains": 0,
+        "longTermCapitalGains": 0,
+        "businessIncome": 0,
+        "deduction80C": 24000,
+        "deduction80D": 0,
+        "deduction80TTA": 6100,
+        "professionalTax": 1200,
+        "tdsPaid": 35000,
+        "advanceTaxPaid": 0,
+        "age": 27
+      }
+    }
+  ]
+}
