@@ -16,3 +16,4 @@ Status board for the discovery phase. One row per stream; agents append findings
 - 2026-08-19: all 4 research streams complete; synthesis (opus) started.
 - 2026-08-19: synthesis complete → research/synthesis/ideas.md (top-5 concepts + recommendation).
 - 2026-08-19: user personal-experience anchor = Income Tax e-filing (first-time filer). ITR deep-dive done → research/itr/findings.md.
+- 2026-08-19: third-party ITR platform teardown done → research/itr/competitors.md. Direction: first-time-filer ITR experience (interview-first, education-inline, pre-flight validation, post-filing notice explainer).
