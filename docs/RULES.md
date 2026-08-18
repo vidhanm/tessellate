@@ -11,13 +11,13 @@ Evaluate in order; first match wins.
 | Any of: capital gains (beyond ITR-1 carve-out), >1 house property, foreign assets/income, director, unlisted shares, agri income >5k, income >50L, non-resident, TDS u/s 194N, ESOP deferral | ITR-2 |
 | Salary/pension + ≤1 house property + other sources (interest, dividend, family pension) + agri ≤5k, total ≤50L, LTCG 112A ≤1.25L with no c/f loss (AY25-26+ relaxation) | ITR-1 |
 Reasons array must cite the triggering fact ("You sold mutual funds → capital gains → ITR-2").
-*Confirm 112A relaxation applies to ITR-4 in AY26-27; treat as ITR-1 only if unsure.
+*The 112A ≤1.25L relaxation applies to both ITR-1 and ITR-4 for AY 2026-27 — confirmed identical eligibility/disqualifier language on both forms (verified 2026-08-19).
 
 ## 2. Where does each income go (interview → schedule map)
 | Plain question | Head / schedule | Note |
 |---|---|---|
 | Salary/pension (Form 16) | Salary | Std deduction: 75k new / 50k old |
-| Dividend from shares/MF | Other Sources (Sch OS) | Quarterly breakup for 234C; TDS 194 if >5k/company |
+| Dividend from shares/MF | Other Sources (Sch OS) | Quarterly breakup for 234C; TDS 194 if >10k/company (raised from 5k, Budget 2025, effective FY25-26) (verified 2026-08-19) |
 | Savings bank interest | Other Sources | 80TTA up to 10k (old regime, <60y) |
 | FD/RD interest | Other Sources | 80TTB up to 50k (old, ≥60y) |
 | Stipend with 194J TDS | Profession (44ADA presumptive) or Other Sources — flag ambiguity | Show both; recommend consistency with deductor's section |
@@ -31,7 +31,7 @@ Reasons array must cite the triggering fact ("You sold mutual funds → capital 
 ## 3. Regime comparison
 New (default): slabs 0–4L nil, 4–8L 5%, 8–12L 10%, 12–16L 15%, 16–20L 20%, 20–24L 25%, >24L 30%; std ded 75k; 87A rebate → zero tax up to 12L (with marginal relief); allowed: 80CCD(2), 80CCH, family pension ded 25k. NOT allowed: 80C, 80D, HRA, LTA, 80TTA/TTB, home-loan interest on self-occupied.
 Old: 0–2.5L nil (3L ≥60y, 5L ≥80y), 2.5–5L 5%, 5–10L 20%, >10L 30%; std ded 50k; 87A up to 5L (12.5k); all chapter VI-A deductions, HRA (10(13A)), 24(b) up to 2L.
-Both: cess 4%; surcharge >50L (ignore for demo personas). Special rates (111A/112A/VDA) unaffected by regime and excluded from 87A in new regime for 112A/111A? → 87A does not apply to 112A LTCG in new regime; STCG 111A: contested — show note.
+Both: cess 4%; surcharge >50L (ignore for demo personas). Special rates (111A/112A/VDA) unaffected by regime. 87A rebate does NOT apply against tax on 111A/112/112A special-rate income under the new regime — settled by an explicit Finance Act 2025 proviso to §87A, effective AY 2025-26 onward (resolves the earlier AY24-25 portal-utility-vs-Bombay HC ambiguity; no longer contested for AY 2026-27) (verified 2026-08-19).
 Salaried can switch yearly via form choice; business income needs Form 10-IEA to opt old (once).
 
 ## 4. Pre-flight checks (CPC-style substance validation)
