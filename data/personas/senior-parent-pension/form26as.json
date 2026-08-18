@@ -1,0 +1,29 @@
+{
+  "deductors": [
+    {
+      "name": "Demo Bank",
+      "tan": "ZZZD55443U",
+      "section": "194A",
+      "quarterly": [
+        {
+          "quarter": "Q1",
+          "tds": 4750
+        },
+        {
+          "quarter": "Q2",
+          "tds": 4750
+        },
+        {
+          "quarter": "Q3",
+          "tds": 4750
+        },
+        {
+          "quarter": "Q4",
+          "tds": 4750
+        }
+      ],
+      "total_tds": 19000
+    }
+  ],
+  "total_tds_all_deductors": 19000
+}

@@ -1,0 +1,45 @@
+{
+  "deductors": [
+    {
+      "name": "Demo Brandworks Pvt Ltd",
+      "tan": "ZZZD11223L",
+      "section": "194J",
+      "quarterly": [
+        {
+          "quarter": "Q1",
+          "tds": 11250
+        },
+        {
+          "quarter": "Q2",
+          "tds": 11250
+        },
+        {
+          "quarter": "Q3",
+          "tds": 11250
+        },
+        {
+          "quarter": "Q4",
+          "tds": 11250
+        }
+      ],
+      "total_tds": 45000
+    },
+    {
+      "name": "Demo Studio Nine LLP",
+      "tan": "ZZZD44556M",
+      "section": "194J",
+      "quarterly": [
+        {
+          "quarter": "Q2",
+          "tds": 12500
+        },
+        {
+          "quarter": "Q3",
+          "tds": 12500
+        }
+      ],
+      "total_tds": 25000
+    }
+  ],
+  "total_tds_all_deductors": 70000
+}

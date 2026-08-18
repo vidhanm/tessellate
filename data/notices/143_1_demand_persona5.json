@@ -1,0 +1,99 @@
+{
+  "synthetic": true,
+  "banner": "SYNTHETIC — NOT AN OFFICIAL NOTICE",
+  "din": "ZZ20261105002INTIM0143",
+  "pan": "ZZEPD5678N",
+  "assessee_name": "Demo Filer",
+  "ay": "2026-27",
+  "section": "143(1)",
+  "notice_type": "Intimation -- Demand",
+  "date_of_order": "05-Nov-2026",
+  "response_due_date": "05-Dec-2026",
+  "acknowledgement_no": "ZZ112233440261102",
+  "filing_date_of_original_return": "02-Nov-2026",
+  "issuing_authority": "CPC, Income Tax Department, Bengaluru (SYNTHETIC)",
+  "reason_codes": [
+    {
+      "code": "203",
+      "description": "Deduction under 'Standard Deduction (Salary)' claimed in the return exceeds the amount allowable under section 16(ia) for the assessee for the assessment year."
+    }
+  ],
+  "detailed_reason": "The return reflects two employers (Demo Retail Ventures Pvt Ltd and Demo Fintech Labs Pvt Ltd) and a combined standard deduction claim of Rs 1,00,000. Under section 16(ia), an assessee is entitled to only one standard deduction (Rs 50,000 under the regime opted) per assessment year, irrespective of the number of employers. The excess of Rs 50,000 has been disallowed and total income recomputed accordingly.",
+  "computation_table": [
+    {
+      "field": "Gross Salary (all employers)",
+      "as_computed_by_cpc": 1050000,
+      "as_entered_by_taxpayer": 1050000
+    },
+    {
+      "field": "Standard Deduction u/s 16(ia)",
+      "as_computed_by_cpc": 50000,
+      "as_entered_by_taxpayer": 100000
+    },
+    {
+      "field": "HRA Exemption u/s 10(13A)",
+      "as_computed_by_cpc": 85000,
+      "as_entered_by_taxpayer": 85000
+    },
+    {
+      "field": "Deduction u/s 80C",
+      "as_computed_by_cpc": 150000,
+      "as_entered_by_taxpayer": 150000
+    },
+    {
+      "field": "Deduction u/s 80D",
+      "as_computed_by_cpc": 15000,
+      "as_entered_by_taxpayer": 15000
+    },
+    {
+      "field": "Income from Other Sources",
+      "as_computed_by_cpc": 1800,
+      "as_entered_by_taxpayer": 1800
+    },
+    {
+      "field": "Total Income",
+      "as_computed_by_cpc": 751800,
+      "as_entered_by_taxpayer": 701800
+    },
+    {
+      "field": "Tax on Total Income",
+      "as_computed_by_cpc": 62860,
+      "as_entered_by_taxpayer": 52860
+    },
+    {
+      "field": "Health & Education Cess @4%",
+      "as_computed_by_cpc": 2514,
+      "as_entered_by_taxpayer": 2114
+    },
+    {
+      "field": "Total Tax Liability",
+      "as_computed_by_cpc": 65374,
+      "as_entered_by_taxpayer": 54974
+    },
+    {
+      "field": "TDS Credit (Form 26AS)",
+      "as_computed_by_cpc": 15000,
+      "as_entered_by_taxpayer": 15000
+    },
+    {
+      "field": "Interest u/s 234B/234C",
+      "as_computed_by_cpc": 260,
+      "as_entered_by_taxpayer": 0
+    },
+    {
+      "field": "Net Amount Payable / (Refundable)",
+      "as_computed_by_cpc": 10634,
+      "as_entered_by_taxpayer": -9974,
+      "note": "Positive = demand, negative = refund claimed by taxpayer"
+    }
+  ],
+  "demand": {
+    "amount": 10634,
+    "rounded_amount": 10660,
+    "due_date": "05-Dec-2026",
+    "mode_of_payment": "e-Pay Tax service on the e-filing portal, Challan No. ITNS 280 (SYNTHETIC)"
+  },
+  "action_required": "Pay the demand of Rs 10,660 within 30 days, OR file a rectification/response disagreeing with the demand under 'Response to Outstanding Demand' if you believe the standard deduction figure is correct.",
+  "consequence_of_non_response": "Interest u/s 220(2) will accrue on the unpaid demand, and the amount may be adjusted against future refunds.",
+  "helpline": "1800-103-0025 (SYNTHETIC DEMO NUMBER)"
+}

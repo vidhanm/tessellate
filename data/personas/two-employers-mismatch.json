@@ -1,0 +1,27 @@
+{
+  "slug": "two-employers-mismatch",
+  "name": "Demo Filer",
+  "age": 31,
+  "pan": "ZZEPD5678N",
+  "aadhaar": "9999 9999 0005",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "Switched jobs mid-year (Employer A Apr-Sep, Employer B Oct-Mar). Each employer independently gave a full standard deduction in its own Form 16, without knowing about the other employer -- so simply adding both Form 16 'taxable income' figures double-counts the standard deduction (Rs 1,00,000 claimed vs Rs 50,000 actually allowed under the old regime). Prefers the old regime because of HRA + 80C + 80D, but if the return is filed by naively summing both Form 16s, CPC's 143(1) processing disallows the extra standard deduction and raises a demand.",
+  "employment": {
+    "type": "salaried",
+    "employer_count": 2,
+    "employer_a_period": "Apr-Sep 2025",
+    "employer_b_period": "Oct-Mar 2026"
+  },
+  "language_pref": "en",
+  "digital_literacy": "medium",
+  "files": {
+    "form16": "personas/two-employers-mismatch/form16.json",
+    "ais": "personas/two-employers-mismatch/ais.json",
+    "form26as": "personas/two-employers-mismatch/form26as.json",
+    "bank": "personas/two-employers-mismatch/bank.json",
+    "expected": "personas/two-employers-mismatch/expected.json"
+  }
+}

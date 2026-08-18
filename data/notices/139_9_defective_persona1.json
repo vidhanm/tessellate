@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "banner": "SYNTHETIC — NOT AN OFFICIAL NOTICE",
+  "din": "ZZ20260918001DEFECT0001",
+  "pan": "ZZAPD1234E",
+  "assessee_name": "Demo Filer",
+  "ay": "2026-27",
+  "section": "139(9)",
+  "notice_type": "Defective Return Notice",
+  "date_of_order": "18-Sep-2026",
+  "response_due_date": "18-Oct-2026",
+  "acknowledgement_no": "ZZ987654320260918",
+  "filing_date_of_original_return": "22-Jul-2026",
+  "issuing_authority": "CPC, Income Tax Department, Bengaluru (SYNTHETIC)",
+  "reason_codes": [
+    {
+      "code": "14",
+      "description": "Assessee has income under 'Income from Other Sources' as per AIS/Form 26AS that has not been offered to tax in the return of income filed."
+    }
+  ],
+  "detailed_reason": "As per Annual Information Statement (AIS), dividend income of Rs 1,040 (SFT-015, reported by Zerodha Broking Ltd/RTA) and savings bank interest of Rs 2,300 (SFT-016, reported by Demo Bank) have been identified for PAN ZZAPD1234E for AY 2026-27. These amounts do not appear to have been included under the head 'Income from Other Sources' in the return filed on 22-Jul-2026.",
+  "computation_table": [
+    {
+      "field": "Income from Other Sources (Dividend)",
+      "as_per_ais": 1040,
+      "as_entered_by_taxpayer": 0
+    },
+    {
+      "field": "Income from Other Sources (Savings Interest)",
+      "as_per_ais": 2300,
+      "as_entered_by_taxpayer": 0
+    }
+  ],
+  "action_required": "File a corrected return in response to this notice within the response due date, u/s 139(9), including the omitted income. Use the 'e-Proceedings' tab on the e-filing portal, select this DIN, and upload the revised computation.",
+  "consequence_of_non_response": "If no response is filed by the due date, the return filed on 22-Jul-2026 shall be treated as an invalid return u/s 139(9), as if no return had been filed for AY 2026-27.",
+  "helpline": "1800-103-0025 (SYNTHETIC DEMO NUMBER)"
+}

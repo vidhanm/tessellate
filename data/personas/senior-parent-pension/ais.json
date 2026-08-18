@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "info_code": "SFT-NA",
+      "description": "Pension (via bank pension account)",
+      "source": "Demo Bank (Pension Disbursing Branch)",
+      "amount": 480000,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active",
+      "note": "No TDS deducted on pension as it is below threshold after standard deduction"
+    },
+    {
+      "info_code": "TDS-194A",
+      "description": "Interest on fixed deposits",
+      "source": "Demo Bank",
+      "amount": 190000,
+      "tds": 19000,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    }
+  ]
+}

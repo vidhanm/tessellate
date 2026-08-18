@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "info_code": "TDS-192",
+      "description": "Salary",
+      "source": "Demo Retail Ventures Pvt Ltd (TAN ZZZD22110P)",
+      "amount": 500000,
+      "tds": 4000,
+      "quarter": "Q1-Q2",
+      "status": "Active"
+    },
+    {
+      "info_code": "TDS-192",
+      "description": "Salary",
+      "source": "Demo Fintech Labs Pvt Ltd (TAN ZZZD33221R)",
+      "amount": 550000,
+      "tds": 11000,
+      "quarter": "Q3-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-016",
+      "description": "Interest from savings bank",
+      "source": "Demo Bank",
+      "amount": 1800,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    }
+  ]
+}

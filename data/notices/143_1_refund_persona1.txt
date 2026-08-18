@@ -1,0 +1,42 @@
+SYNTHETIC — NOT AN OFFICIAL NOTICE
+==================================================================
+                 INCOME TAX DEPARTMENT (SYNTHETIC DEMO)
+              Centralized Processing Centre, Bengaluru
+==================================================================
+                  INTIMATION UNDER SECTION 143(1)
+
+DIN: ZZ20260910003INTIM0143                     Date: 10-Sep-2026
+PAN: ZZAPD1234E                                 AY: 2026-27
+Name: Demo Filer
+Acknowledgement No: ZZ998877660260905
+Return filed on: 05-Sep-2026
+
+------------------------------------------------------------------
+Return processed as filed. No adjustments made. Income, deductions
+and TDS credit as returned match Department records (26AS/AIS).
+------------------------------------------------------------------
+
+FIELD                          AS COMPUTED BY   AS ENTERED BY
+                                CPC              TAXPAYER
+------------------------------------------------------------------
+Salary Income                    8,45,000          8,45,000
+Other Sources                        3,340              3,340
+Total Income                     8,48,340          8,48,340
+Tax on Total Income                 24,834             24,834
+Rebate u/s 87A                      24,834             24,834
+Tax Payable                              0                  0
+TDS Credit (Form 26AS)              21,000             21,000
+------------------------------------------------------------------
+NET REFUND                      Rs 21,000
+------------------------------------------------------------------
+
+REFUND: Rs 21,000 will be credited directly to prevalidated bank
+account XXXXXXXX4501 (Demo Bank), expected within ~20 days.
+
+No action required from taxpayer.
+
+Helpline: 1800-103-0025 (SYNTHETIC DEMO NUMBER)
+==================================================================
+SYNTHETIC — NOT AN OFFICIAL NOTICE -- This is fabricated demo content for an ITR-filing
+prototype and carries no legal effect whatsoever.
+==================================================================

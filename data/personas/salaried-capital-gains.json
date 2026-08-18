@@ -1,0 +1,27 @@
+{
+  "slug": "salaried-capital-gains",
+  "name": "Demo Filer",
+  "age": 29,
+  "pan": "ZZCPD3456G",
+  "aadhaar": "9999 9999 0003",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "Salaried professional (Rs 12.5 LPA) who also trades equity mutual funds. Realised Rs 18,000 short-term capital gains (111A) and Rs 1,40,000 long-term capital gains (112A) this year; some LTCG units were bought before 31-Jan-2018 so grandfathering (FMV as cost) applies. Capital gains force ITR-2. Regime choice needs an actual computation because of full 80C+80D usage under the old regime.",
+  "employment": {
+    "type": "salaried",
+    "employer_count": 1,
+    "ctc_lpa": 12.5
+  },
+  "language_pref": "en",
+  "digital_literacy": "high",
+  "files": {
+    "form16": "personas/salaried-capital-gains/form16.json",
+    "ais": "personas/salaried-capital-gains/ais.json",
+    "form26as": "personas/salaried-capital-gains/form26as.json",
+    "bank": "personas/salaried-capital-gains/bank.json",
+    "broker": "personas/salaried-capital-gains/broker.csv",
+    "expected": "personas/salaried-capital-gains/expected.json"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "synthetic": true,
+  "banner": "SYNTHETIC — NOT AN OFFICIAL NOTICE",
+  "din": "ZZ20260910003INTIM0143",
+  "pan": "ZZAPD1234E",
+  "assessee_name": "Demo Filer",
+  "ay": "2026-27",
+  "section": "143(1)",
+  "notice_type": "Intimation -- Refund",
+  "date_of_order": "10-Sep-2026",
+  "response_due_date": "N/A -- informational only, no response required",
+  "acknowledgement_no": "ZZ998877660260905",
+  "filing_date_of_original_return": "05-Sep-2026",
+  "issuing_authority": "CPC, Income Tax Department, Bengaluru (SYNTHETIC)",
+  "reason_codes": [],
+  "detailed_reason": "Return processed as filed. No adjustments made. Income, deductions and TDS credit as returned by the taxpayer match records available with the Department (Form 26AS/AIS).",
+  "computation_table": [
+    {
+      "field": "Salary Income",
+      "as_computed_by_cpc": 845000,
+      "as_entered_by_taxpayer": 845000
+    },
+    {
+      "field": "Income from Other Sources",
+      "as_computed_by_cpc": 3340,
+      "as_entered_by_taxpayer": 3340
+    },
+    {
+      "field": "Total Income",
+      "as_computed_by_cpc": 848340,
+      "as_entered_by_taxpayer": 848340
+    },
+    {
+      "field": "Tax on Total Income",
+      "as_computed_by_cpc": 24834,
+      "as_entered_by_taxpayer": 24834
+    },
+    {
+      "field": "Rebate u/s 87A",
+      "as_computed_by_cpc": 24834,
+      "as_entered_by_taxpayer": 24834
+    },
+    {
+      "field": "Tax Payable",
+      "as_computed_by_cpc": 0,
+      "as_entered_by_taxpayer": 0
+    },
+    {
+      "field": "TDS Credit (Form 26AS)",
+      "as_computed_by_cpc": 21000,
+      "as_entered_by_taxpayer": 21000
+    },
+    {
+      "field": "Net Amount Payable / (Refundable)",
+      "as_computed_by_cpc": -21000,
+      "as_entered_by_taxpayer": -21000,
+      "note": "Negative = refund"
+    }
+  ],
+  "refund": {
+    "amount": 21000,
+    "mode": "Direct credit to prevalidated bank account XXXXXXXX4501 (Demo Bank)",
+    "expected_credit_within_days": 20
+  },
+  "action_required": "No action required. Refund will be credited automatically to your prevalidated and refund-nominated bank account.",
+  "consequence_of_non_response": "Not applicable -- this is a refund intimation, no response needed.",
+  "helpline": "1800-103-0025 (SYNTHETIC DEMO NUMBER)"
+}

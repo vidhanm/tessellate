@@ -1,0 +1,12 @@
+{
+  "accounts": [
+    {
+      "bank": "Demo Bank",
+      "account_no": "XXXXXXXX4501",
+      "ifsc": "DEMO0004501",
+      "type": "Savings",
+      "prevalidated": true,
+      "nominated_for_refund": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "issued": true,
+  "note": "TWO Form 16s issued -- one per employer. Each independently applied a full standard deduction, unaware of the other employer.",
+  "employer_a": {
+    "part_a": {
+      "employer_name": "Demo Retail Ventures Pvt Ltd",
+      "employer_tan": "ZZZD22110P",
+      "employer_pan": "ZZCPD1122Q",
+      "employee_pan": "ZZEPD5678N",
+      "period": "01-Apr-2025 to 30-Sep-2025",
+      "quarterly_tds": [
+        {
+          "quarter": "Q1",
+          "receipt_no": "ZZQ1RCPT003A",
+          "amount_paid": 250000,
+          "tds": 2000
+        },
+        {
+          "quarter": "Q2",
+          "receipt_no": "ZZQ2RCPT003A",
+          "amount_paid": 250000,
+          "tds": 2000
+        }
+      ],
+      "total_tds": 4000
+    },
+    "part_b": {
+      "gross_salary_17_1": 500000,
+      "exemptions_10": {
+        "hra": 40000
+      },
+      "standard_deduction_16_ia": 50000,
+      "deductions_chapter_via": {
+        "80C": 75000,
+        "80D": 0
+      },
+      "income_chargeable_under_head_salary": 335000,
+      "total_taxable_income_as_per_employer": 335000,
+      "tax_payable_as_per_employer": 4250,
+      "regime_assumed_by_employer": "old"
+    }
+  },
+  "employer_b": {
+    "part_a": {
+      "employer_name": "Demo Fintech Labs Pvt Ltd",
+      "employer_tan": "ZZZD33221R",
+      "employer_pan": "ZZCPD3344S",
+      "employee_pan": "ZZEPD5678N",
+      "period": "01-Oct-2025 to 31-Mar-2026",
+      "quarterly_tds": [
+        {
+          "quarter": "Q3",
+          "receipt_no": "ZZQ3RCPT003B",
+          "amount_paid": 275000,
+          "tds": 5500
+        },
+        {
+          "quarter": "Q4",
+          "receipt_no": "ZZQ4RCPT003B",
+          "amount_paid": 275000,
+          "tds": 5500
+        }
+      ],
+      "total_tds": 11000
+    },
+    "part_b": {
+      "gross_salary_17_1": 550000,
+      "exemptions_10": {
+        "hra": 45000
+      },
+      "standard_deduction_16_ia": 50000,
+      "deductions_chapter_via": {
+        "80C": 75000,
+        "80D": 15000
+      },
+      "income_chargeable_under_head_salary": 365000,
+      "total_taxable_income_as_per_employer": 365000,
+      "tax_payable_as_per_employer": 11500,
+      "regime_assumed_by_employer": "old"
+    }
+  }
+}

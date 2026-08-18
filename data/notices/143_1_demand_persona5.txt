@@ -1,0 +1,56 @@
+SYNTHETIC — NOT AN OFFICIAL NOTICE
+==================================================================
+                 INCOME TAX DEPARTMENT (SYNTHETIC DEMO)
+              Centralized Processing Centre, Bengaluru
+==================================================================
+                  INTIMATION UNDER SECTION 143(1)
+
+DIN: ZZ20261105002INTIM0143                     Date: 05-Nov-2026
+PAN: ZZEPD5678N                                 AY: 2026-27
+Name: Demo Filer
+Acknowledgement No: ZZ112233440261102
+Return filed on: 02-Nov-2026
+Response due by: 05-Dec-2026
+
+------------------------------------------------------------------
+REASON FOR ADJUSTMENT (Code 203)
+------------------------------------------------------------------
+Two employers reported for the year (Demo Retail Ventures Pvt Ltd
+and Demo Fintech Labs Pvt Ltd). Combined standard deduction claimed
+was Rs 1,00,000. Only ONE standard deduction (Rs 50,000) is allowed
+per assessee per year u/s 16(ia), regardless of employer count.
+Excess of Rs 50,000 has been disallowed.
+
+------------------------------------------------------------------
+FIELD                          AS COMPUTED BY   AS ENTERED BY
+                                CPC              TAXPAYER
+------------------------------------------------------------------
+Gross Salary (all employers)   10,50,000        10,50,000
+Standard Deduction u/s 16(ia)      50,000          1,00,000
+HRA Exemption u/s 10(13A)          85,000             85,000
+Deduction u/s 80C               1,50,000          1,50,000
+Deduction u/s 80D                  15,000             15,000
+Other Sources                       1,800              1,800
+Total Income                    7,51,800          7,01,800
+Tax on Total Income                62,860             52,860
+Cess @4%                            2,514              2,114
+Total Tax Liability                65,374             54,974
+TDS Credit (Form 26AS)              15,000             15,000
+Interest u/s 234B/234C                 260                  0
+------------------------------------------------------------------
+NET DEMAND                      Rs 10,634  (rounded Rs 10,660)
+------------------------------------------------------------------
+
+DEMAND: Rs 10,660, due by 05-Dec-2026
+Pay via e-Pay Tax (Challan ITNS 280) on the e-filing portal, or
+respond via 'Response to Outstanding Demand' if you disagree.
+
+CONSEQUENCE OF NON-RESPONSE
+Interest u/s 220(2) accrues on unpaid demand; may be adjusted
+against future refunds.
+
+Helpline: 1800-103-0025 (SYNTHETIC DEMO NUMBER)
+==================================================================
+SYNTHETIC — NOT AN OFFICIAL NOTICE -- This is fabricated demo content for an ITR-filing
+prototype and carries no legal effect whatsoever.
+==================================================================

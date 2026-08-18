@@ -1,0 +1,48 @@
+SYNTHETIC — NOT AN OFFICIAL NOTICE
+==================================================================
+                 INCOME TAX DEPARTMENT (SYNTHETIC DEMO)
+              Centralized Processing Centre, Bengaluru
+==================================================================
+
+DIN: ZZ20260918001DEFECT0001                    Date: 18-Sep-2026
+Notice u/s 139(9) of the Income-tax Act -- Defective Return
+
+PAN: ZZAPD1234E                                 AY: 2026-27
+Name: Demo Filer
+Acknowledgement No: ZZ987654320260918
+Return filed on: 22-Jul-2026
+Response due by: 18-Oct-2026
+
+------------------------------------------------------------------
+REASON FOR DEFECT (Code 14)
+------------------------------------------------------------------
+Assessee has income under 'Income from Other Sources' as per AIS
+that has not been offered to tax in the return of income filed.
+
+As per Annual Information Statement (AIS):
+  - Dividend income Rs 1,040 (SFT-015, Zerodha Broking Ltd/RTA)
+  - Savings bank interest Rs 2,300 (SFT-016, Demo Bank)
+These amounts do not appear under 'Income from Other Sources' in
+the return filed on 22-Jul-2026.
+
+------------------------------------------------------------------
+                    AS PER AIS      AS ENTERED BY TAXPAYER
+------------------------------------------------------------------
+Dividend                Rs 1,040              Rs 0
+Savings Interest        Rs 2,300              Rs 0
+------------------------------------------------------------------
+
+ACTION REQUIRED
+File a corrected return via e-Proceedings within the response due
+date, including the omitted income under Other Sources.
+
+CONSEQUENCE OF NON-RESPONSE
+If no response is filed by 18-Oct-2026, the original return shall
+be treated as an INVALID return u/s 139(9), as if no return had
+been filed for AY 2026-27.
+
+Helpline: 1800-103-0025 (SYNTHETIC DEMO NUMBER)
+==================================================================
+SYNTHETIC — NOT AN OFFICIAL NOTICE -- This is fabricated demo content for an ITR-filing
+prototype and carries no legal effect whatsoever.
+==================================================================

@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "info_code": "TDS-192",
+      "description": "Salary",
+      "source": "Demo Consulting Group Pvt Ltd (TAN ZZZD05566H)",
+      "amount": 1250000,
+      "tds": 65500,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-017",
+      "description": "Sale of units of mutual fund (STCG)",
+      "source": "Demo Mutual Fund AMC (via Zerodha Coin)",
+      "amount": 18000,
+      "tds": 0,
+      "quarter": "Q3",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-017",
+      "description": "Sale of units of mutual fund (LTCG, section 112A)",
+      "source": "Demo Mutual Fund AMC (via Zerodha Coin)",
+      "amount": 140000,
+      "tds": 0,
+      "quarter": "Q2",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-016",
+      "description": "Interest from savings bank",
+      "source": "Demo Bank",
+      "amount": 4200,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    }
+  ]
+}

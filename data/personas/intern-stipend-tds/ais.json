@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "info_code": "TDS-194J",
+      "description": "Fee for professional or technical services",
+      "source": "Demo Startup Labs Pvt Ltd (TAN ZZZD09876G)",
+      "amount": 150000,
+      "tds": 15000,
+      "quarter": "Q3-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-016",
+      "description": "Interest from savings bank",
+      "source": "Demo Bank",
+      "amount": 500,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    }
+  ]
+}

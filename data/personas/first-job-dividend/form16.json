@@ -1,0 +1,61 @@
+{
+  "issued": true,
+  "part_a": {
+    "employer_name": "Demo Tech Solutions Pvt Ltd",
+    "employer_tan": "ZZZD01234E",
+    "employer_pan": "ZZCPD5678F",
+    "employee_pan": "ZZAPD1234E",
+    "period": "01-Apr-2025 to 31-Mar-2026",
+    "quarterly_tds": [
+      {
+        "quarter": "Q1",
+        "receipt_no": "ZZQ1RCPT001",
+        "amount_paid": 230000,
+        "tds": 5250
+      },
+      {
+        "quarter": "Q2",
+        "receipt_no": "ZZQ2RCPT001",
+        "amount_paid": 230000,
+        "tds": 5250
+      },
+      {
+        "quarter": "Q3",
+        "receipt_no": "ZZQ3RCPT001",
+        "amount_paid": 230000,
+        "tds": 5250
+      },
+      {
+        "quarter": "Q4",
+        "receipt_no": "ZZQ4RCPT001",
+        "amount_paid": 230000,
+        "tds": 5250
+      }
+    ],
+    "total_tds": 21000
+  },
+  "part_b": {
+    "gross_salary_17_1": 920000,
+    "perquisites_17_2": 0,
+    "profits_in_lieu_17_3": 0,
+    "exemptions_10": {
+      "hra": 0,
+      "lta": 0,
+      "other": 0,
+      "note": "Lives with parents; no HRA exemption claimed"
+    },
+    "standard_deduction_16_ia": 75000,
+    "professional_tax_16_iii": 0,
+    "income_chargeable_under_head_salary": 845000,
+    "deductions_chapter_via": {
+      "80C": 50000,
+      "80D": 0,
+      "80CCD1B": 0,
+      "80TTA": 0,
+      "note": "80C = employee EPF contribution; not applied by employer since new regime assumed"
+    },
+    "total_taxable_income_as_per_employer": 845000,
+    "tax_payable_as_per_employer": 21000,
+    "regime_assumed_by_employer": "new"
+  }
+}

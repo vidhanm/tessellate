@@ -1,0 +1,99 @@
+{
+  "correct_itr_form": "ITR-1 (practical default) -- with ITR-4 and ITR-3 as legitimate alternative positions",
+  "itr_form_reasoning": "This is a genuinely contested case. The payer deducted TDS under 194J (professional fees), which formally implies 'income from profession'. But a student intern receiving a fixed monthly stipend with no independent professional practice, no clients, no business setup, and no intention to carry on a profession does not meet the substantive test of 'carrying on a profession'. Most practitioners report such stipend income as 'Income from Other Sources' via ITR-1, which is simplest and matches CBDT's general treatment of stipends (non-taxable only when part of a full-time educational course under a scholarship; taxable as income when it is compensation for work, but not necessarily as business/professional income).",
+  "alternative_interpretation": [
+    {
+      "position": "ITR-1 -- stipend as Income from Other Sources",
+      "reasoning": "No independent professional practice; TDS section used by payer is not conclusive of the correct head of income for the recipient. Simplest, most common real-world filing choice for internship stipends.",
+      "tax_impact": "Same nil tax outcome as other interpretations at this income level; full TDS refunded."
+    },
+    {
+      "position": "ITR-4 -- presumptive professional income under section 44ADA",
+      "reasoning": "If the stipend is treated as fees for professional/technical services per the 194J characterisation, and the recipient is willing to be treated as 'carrying on a profession', 44ADA allows presumptive income at 50% of gross receipts (Rs 75,000) without maintaining books.",
+      "tax_impact": "Presumptive income Rs 75,000, still below basic exemption; nil tax; full refund."
+    },
+    {
+      "position": "ITR-3 -- regular business/professional income with books of account",
+      "reasoning": "Technically correct if the taxpayer does not want to use presumptive taxation and instead computes actual income (gross receipts less any expenses).",
+      "tax_impact": "Income Rs 1,50,000 minus negligible expenses; still below exemption limit; nil tax; full refund."
+    }
+  ],
+  "recommended_regime": "new",
+  "regime_comparison": {
+    "new_regime_tax": 0,
+    "old_regime_tax": 0,
+    "note": "Total income (Rs 1,50,500 under the Other Sources interpretation, or lower under 44ADA) is below the basic exemption limit under both regimes, so tax is nil either way. New regime recommended only because it is the statutory default and no deduction is being given up."
+  },
+  "income_by_head": {
+    "salary": 0,
+    "other_sources": 150500,
+    "capital_gains": {
+      "stcg_111a": 0,
+      "ltcg_112a": 0
+    },
+    "business_profession": 0
+  },
+  "deductions_claimed": {
+    "standard_deduction": 0,
+    "80C": 0,
+    "80D": 0,
+    "note": "No standard deduction available since this is not salary income under any interpretation used here"
+  },
+  "tax_computation": {
+    "new_regime": {
+      "total_income": 150500,
+      "slab_tax": [
+        {
+          "slab": "0-4L",
+          "rate": "0%",
+          "tax": 0
+        }
+      ],
+      "tax_before_rebate": 0,
+      "section_87A_rebate": 0,
+      "tax_after_rebate": 0,
+      "cess_4pct": 0,
+      "total_tax": 0
+    },
+    "old_regime": {
+      "total_income": 150500,
+      "slab_tax": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        }
+      ],
+      "tax_before_rebate": 0,
+      "section_87A_rebate": 0,
+      "tax_after_rebate": 0,
+      "cess_4pct": 0,
+      "total_tax": 0
+    }
+  },
+  "tds_total": 15000,
+  "final_outcome": {
+    "type": "refund",
+    "amount": 15000,
+    "regime_used": "new",
+    "blocker": "Bank account not prevalidated -- refund will fail to credit until account XXXXXXXX7712 is prevalidated on the e-filing portal."
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "ITR_FORM_AMBIGUOUS_194J_STIPEND",
+      "severity": "warning",
+      "message": "Income reported under 194J (professional fees) but taxpayer profile looks like an internship stipend, not independent professional practice. Confirm correct ITR form and head of income before filing."
+    },
+    {
+      "code": "BANK_NOT_PREVALIDATED",
+      "severity": "error",
+      "message": "No bank account is prevalidated for refund credit. Add and prevalidate a bank account before filing to avoid refund failure."
+    },
+    {
+      "code": "NO_FORM16_INCOME_ONLY_26AS",
+      "severity": "info",
+      "message": "No Form 16 available; income and TDS must be reconciled entirely from Form 26AS/AIS."
+    }
+  ],
+  "expected_ais_mismatches": []
+}

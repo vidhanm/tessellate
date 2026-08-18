@@ -1,0 +1,298 @@
+{
+  "terms": [
+    {
+      "term": "ITR-1 (Sahaj)",
+      "simple": "The simplest tax return form, for people with only salary/pension, one house, and other-sources income under Rs 50 lakh total.",
+      "why_it_matters": "Using the wrong form can make your return invalid or trigger a defective-return notice.",
+      "where_in_return": "Form selection screen before you start filling details.",
+      "hi": "यह सबसे आसान टैक्स रिटर्न फॉर्म है, जो केवल वेतन/पेंशन और सीमित अन्य आय वालों के लिए है।"
+    },
+    {
+      "term": "ITR-2",
+      "simple": "The return form for people with capital gains, multiple house properties, or foreign assets, but no business income.",
+      "why_it_matters": "Selling shares or mutual funds at a profit means you usually can't use ITR-1 anymore.",
+      "where_in_return": "Form selection screen.",
+      "hi": "यह फॉर्म उनके लिए है जिनकी कैपिटल गेन आय है लेकिन बिज़नेस आय नहीं है।"
+    },
+    {
+      "term": "ITR-3",
+      "simple": "The return form for people with regular business or professional income where you maintain full books of account.",
+      "why_it_matters": "Needed if you don't use presumptive taxation and track actual profit and loss.",
+      "where_in_return": "Form selection screen.",
+      "hi": "यह फॉर्म उन लोगों के लिए है जिनकी नियमित व्यापार या पेशेवर आय है।"
+    },
+    {
+      "term": "ITR-4 (Sugam)",
+      "simple": "The return form for small business owners and professionals using presumptive taxation (44AD/44ADA/44AE).",
+      "why_it_matters": "Lets freelancers and small businesses skip detailed bookkeeping.",
+      "where_in_return": "Form selection screen.",
+      "hi": "यह फॉर्म प्रिज़म्प्टिव टैक्सेशन का उपयोग करने वाले छोटे व्यवसायों और पेशेवरों के लिए है।"
+    },
+    {
+      "term": "AIS (Annual Information Statement)",
+      "simple": "A detailed statement showing almost every financial transaction the tax department knows about you -- salary, interest, dividends, share sales, and more.",
+      "why_it_matters": "If income in AIS doesn't match your return, you may get a notice.",
+      "where_in_return": "Check before filling in income details; available on the e-filing portal.",
+      "hi": "एआईएस एक विस्तृत विवरण है जो आपके बारे में टैक्स विभाग को ज्ञात लगभग हर वित्तीय लेनदेन दिखाता है।"
+    },
+    {
+      "term": "TIS (Taxpayer Information Summary)",
+      "simple": "A simplified, category-wise summary of the AIS, showing one net figure per income type.",
+      "why_it_matters": "Easier to use than raw AIS when filling in your return quickly.",
+      "where_in_return": "Reference document alongside AIS on the e-filing portal.",
+      "hi": "टीआईएस, एआईएस का एक सरल, श्रेणीवार सारांश है।"
+    },
+    {
+      "term": "Form 26AS",
+      "simple": "A tax-credit statement showing all TDS/TCS deducted against your PAN, plus advance tax and self-assessment tax paid.",
+      "why_it_matters": "This is the department's record of tax already paid on your behalf -- you can only claim credit for what appears here.",
+      "where_in_return": "TDS/Taxes Paid schedule.",
+      "hi": "फॉर्म 26एएस आपके पैन के खिलाफ काटे गए सभी टीडीएस/टीसीएस को दिखाने वाला एक टैक्स-क्रेडिट विवरण है।"
+    },
+    {
+      "term": "Form 16",
+      "simple": "A certificate your employer gives you showing your salary, deductions, and TDS deducted for the year.",
+      "why_it_matters": "It's the primary source document for filling in salary income in ITR-1/2.",
+      "where_in_return": "Used to pre-fill the Salary schedule.",
+      "hi": "फॉर्म 16 आपके नियोक्ता द्वारा दिया गया एक प्रमाणपत्र है जो साल भर के वेतन, कटौती और टीडीएस को दिखाता है।"
+    },
+    {
+      "term": "Tax regime",
+      "simple": "India has two ways to compute your tax -- the 'new regime' (lower rates, fewer deductions) and the 'old regime' (higher rates, more deductions like 80C/HRA).",
+      "why_it_matters": "Choosing the wrong regime can cost you thousands of rupees in extra tax.",
+      "where_in_return": "Regime selection option, usually near the start of the return.",
+      "hi": "भारत में टैक्स की गणना के दो तरीके हैं -- नई व्यवस्था और पुरानी व्यवस्था।"
+    },
+    {
+      "term": "Section 87A rebate",
+      "simple": "A rebate that can bring your tax down to zero if your total income is below a threshold (Rs 12 lakh new regime, Rs 5 lakh old regime for FY2025-26).",
+      "why_it_matters": "Many first-time filers with modest income end up owing zero tax because of this rebate.",
+      "where_in_return": "Automatically applied in the tax computation section.",
+      "hi": "87ए छूट आपकी आय एक सीमा से कम होने पर टैक्स को शून्य तक ला सकती है।"
+    },
+    {
+      "term": "Standard deduction",
+      "simple": "A flat deduction from salary/pension income before tax is calculated -- Rs 75,000 under the new regime, Rs 50,000 under the old regime for FY2025-26.",
+      "why_it_matters": "Applies automatically to everyone with salary/pension income, no proof needed.",
+      "where_in_return": "Salary schedule, auto-applied once per person per year.",
+      "hi": "स्टैंडर्ड डिडक्शन वेतन/पेंशन आय से टैक्स गणना से पहले घटाई जाने वाली एक निश्चित राशि है।"
+    },
+    {
+      "term": "80C",
+      "simple": "A deduction (up to Rs 1,50,000, old regime only) for investments/expenses like EPF, PPF, ELSS, life insurance premium, and children's tuition fees.",
+      "why_it_matters": "One of the biggest deduction categories available under the old regime.",
+      "where_in_return": "Chapter VI-A deductions schedule.",
+      "hi": "80सी एक कटौती है जो पुरानी व्यवस्था में ईपीएफ, पीपीएफ जैसे निवेशों के लिए उपलब्ध है।"
+    },
+    {
+      "term": "80D",
+      "simple": "A deduction for health insurance premiums paid for yourself, family, and parents, available only under the old regime.",
+      "why_it_matters": "Can save significant tax if you pay for health insurance, especially for senior citizen parents.",
+      "where_in_return": "Chapter VI-A deductions schedule.",
+      "hi": "80डी स्वास्थ्य बीमा प्रीमियम के लिए एक कटौती है, जो केवल पुरानी व्यवस्था में उपलब्ध है।"
+    },
+    {
+      "term": "80TTA",
+      "simple": "A deduction of up to Rs 10,000 on savings bank account interest, for taxpayers under 60, old regime only.",
+      "why_it_matters": "Reduces tax on small savings account interest, but doesn't cover FD interest.",
+      "where_in_return": "Chapter VI-A deductions schedule.",
+      "hi": "80टीटीए बचत खाता ब्याज पर 10,000 रुपये तक की कटौती है।"
+    },
+    {
+      "term": "80TTB",
+      "simple": "A bigger deduction (up to Rs 50,000) on all bank/post office interest including FDs, only for senior citizens (60+), old regime only.",
+      "why_it_matters": "Much more generous than 80TTA and specifically helps retirees living off FD interest.",
+      "where_in_return": "Chapter VI-A deductions schedule.",
+      "hi": "80टीटीबी वरिष्ठ नागरिकों के लिए एफडी सहित सभी ब्याज पर 50,000 रुपये तक की कटौती है।"
+    },
+    {
+      "term": "HRA (House Rent Allowance)",
+      "simple": "A salary component that can be partly tax-exempt if you pay rent, calculated using a formula involving basic salary, HRA received, and rent paid.",
+      "why_it_matters": "Only available under the old regime; claiming it under the new regime is an error.",
+      "where_in_return": "Salary schedule -> exemptions u/s 10(13A).",
+      "hi": "एचआरए एक वेतन घटक है जो किराया देने पर आंशिक रूप से टैक्स-मुक्त हो सकता है।"
+    },
+    {
+      "term": "STCG (Short-Term Capital Gains)",
+      "simple": "Profit from selling an asset held for a short period (for listed shares/equity funds, 12 months or less).",
+      "why_it_matters": "Taxed at a special flat rate (20% for equity u/s 111A for FY2025-26), not slab rates.",
+      "where_in_return": "Capital Gains schedule in ITR-2/3.",
+      "hi": "एसटीसीजी किसी संपत्ति को कम समय के लिए रखने के बाद बेचने से हुआ लाभ है।"
+    },
+    {
+      "term": "LTCG (Long-Term Capital Gains)",
+      "simple": "Profit from selling an asset held for a longer period (for listed shares/equity funds, more than 12 months).",
+      "why_it_matters": "Equity LTCG gets a Rs 1,25,000 annual exemption, then taxed at 12.5% for FY2025-26.",
+      "where_in_return": "Capital Gains schedule in ITR-2/3.",
+      "hi": "एलटीसीजी किसी संपत्ति को लंबे समय तक रखने के बाद बेचने से हुआ लाभ है।"
+    },
+    {
+      "term": "Section 112A",
+      "simple": "The rule that taxes long-term capital gains on listed equity shares/equity mutual funds above Rs 1,25,000 a year at 12.5%.",
+      "why_it_matters": "Determines how much of your equity LTCG is actually taxable.",
+      "where_in_return": "Capital Gains schedule -> 112A sub-section.",
+      "hi": "धारा 112ए लिस्टेड इक्विटी शेयरों पर लॉन्ग टर्म कैपिटल गेन को टैक्स करने का नियम है।"
+    },
+    {
+      "term": "Section 111A",
+      "simple": "The rule that taxes short-term capital gains on listed equity shares/equity mutual funds at a flat 20% (FY2025-26 rate).",
+      "why_it_matters": "This flat rate applies regardless of your income slab.",
+      "where_in_return": "Capital Gains schedule -> 111A sub-section.",
+      "hi": "धारा 111ए लिस्टेड इक्विटी पर शॉर्ट टर्म कैपिटल गेन को एक निश्चित 20% दर पर टैक्स करने का नियम है।"
+    },
+    {
+      "term": "VDA (Virtual Digital Asset)",
+      "simple": "The tax term for cryptocurrency and similar digital assets; gains are taxed flat at 30% with no deduction for expenses (except cost of acquisition) and no loss set-off.",
+      "why_it_matters": "Crypto gains can't be offset against other losses and are taxed harshly compared to other capital gains.",
+      "where_in_return": "Schedule VDA in ITR-2/3.",
+      "hi": "वीडीए क्रिप्टोकरेंसी जैसी डिजिटल संपत्तियों के लिए टैक्स शब्द है, जिस पर 30% फ्लैट टैक्स लगता है।"
+    },
+    {
+      "term": "e-Verify",
+      "simple": "The final digital confirmation step after filing your return -- without it, your return is treated as not filed.",
+      "why_it_matters": "Many people file but forget to e-Verify, making their return invalid.",
+      "where_in_return": "Immediately after submitting the return, or within 30 days.",
+      "hi": "ई-वेरिफाई रिटर्न भरने के बाद अंतिम डिजिटल पुष्टिकरण चरण है।"
+    },
+    {
+      "term": "ITR-V",
+      "simple": "The acknowledgement/verification form generated after filing, which can be signed and posted to CPC Bengaluru if you don't e-Verify online.",
+      "why_it_matters": "An alternative to e-Verify for people without Aadhaar OTP/net banking access.",
+      "where_in_return": "Downloadable after filing, from the e-filing portal.",
+      "hi": "आईटीआर-वी फाइलिंग के बाद बनने वाला पावती/सत्यापन फॉर्म है।"
+    },
+    {
+      "term": "Section 139(9)",
+      "simple": "The section under which the department sends a 'defective return' notice if your return has certain errors or omissions.",
+      "why_it_matters": "You must respond within the given time or your return is treated as if it was never filed.",
+      "where_in_return": "Notice received via e-Proceedings, not part of the original filing.",
+      "hi": "धारा 139(9) के तहत विभाग गलत या अधूरे रिटर्न पर 'डिफेक्टिव रिटर्न' नोटिस भेजता है।"
+    },
+    {
+      "term": "Section 143(1)",
+      "simple": "The first automated processing of your return by CPC, resulting in an intimation showing either a refund, a demand, or 'no adjustment'.",
+      "why_it_matters": "This is usually the first official response you get after filing -- always read it carefully.",
+      "where_in_return": "Received after processing, not part of the original filing.",
+      "hi": "धारा 143(1) सीपीसी द्वारा आपके रिटर्न की पहली स्वचालित प्रोसेसिंग है।"
+    },
+    {
+      "term": "Belated return",
+      "simple": "A return filed after the original due date but before the final late-filing deadline, usually with a late fee.",
+      "why_it_matters": "Still lets you file (with a penalty), but you lose the ability to carry forward most losses.",
+      "where_in_return": "Return filing type selection.",
+      "hi": "विलंबित रिटर्न वह रिटर्न है जो मूल नियत तारीख के बाद लेकिन अंतिम समय सीमा से पहले दाखिल किया जाता है।"
+    },
+    {
+      "term": "Revised return",
+      "simple": "A corrected version of a return you already filed, replacing it entirely, filed before the deadline for revision.",
+      "why_it_matters": "Lets you fix genuine errors or omissions without penalty (unlike ITR-U).",
+      "where_in_return": "Return filing type selection -> 'Revised u/s 139(5)'.",
+      "hi": "संशोधित रिटर्न पहले दाखिल किए गए रिटर्न का सही किया हुआ संस्करण है।"
+    },
+    {
+      "term": "ITR-U (Updated Return)",
+      "simple": "A return you can file up to 4 years after the assessment year to correct omissions, but only to increase tax liability (with extra fees) never to claim a refund.",
+      "why_it_matters": "A safety net for people who realise later they missed reporting some income.",
+      "where_in_return": "Return filing type selection -> 'Updated u/s 139(8A)'.",
+      "hi": "आईटीआर-यू एक अद्यतन रिटर्न है जो कर देयता बढ़ाने के लिए दाखिल किया जा सकता है।"
+    },
+    {
+      "term": "DIN (Document Identification Number)",
+      "simple": "A unique number stamped on every official communication from the Income Tax Department, used to verify it's genuine.",
+      "why_it_matters": "Any notice without a valid DIN should be treated as suspicious/fake.",
+      "where_in_return": "Printed on all notices/orders; verifiable on the e-filing portal.",
+      "hi": "डीआईएन हर आधिकारिक टैक्स नोटिस पर छपा एक विशिष्ट नंबर है।"
+    },
+    {
+      "term": "TAN (Tax Deduction Account Number)",
+      "simple": "A 10-character number every entity that deducts TDS must have, distinct from PAN.",
+      "why_it_matters": "Shown on Form 16/16A and used to identify which employer/payer deducted your tax.",
+      "where_in_return": "Form 16 Part A, Form 26AS deductor list.",
+      "hi": "टैन हर उस संस्था के लिए ज़रूरी 10-अंकों की संख्या है जो टीडीएस काटती है।"
+    },
+    {
+      "term": "Prevalidation (bank account)",
+      "simple": "The process of confirming a bank account on the e-filing portal so it's eligible to receive tax refunds.",
+      "why_it_matters": "Refunds cannot be credited to an account that isn't prevalidated.",
+      "where_in_return": "'My Bank Account' section of the e-filing profile.",
+      "hi": "प्रीवैलिडेशन बैंक खाते की पुष्टि करने की प्रक्रिया है ताकि वह रिफंड पाने के योग्य हो।"
+    },
+    {
+      "term": "Cess (Health & Education Cess)",
+      "simple": "An additional 4% charge on your total tax (and surcharge, if any), earmarked for health and education spending.",
+      "why_it_matters": "Always added on top of your computed tax -- easy to forget when estimating your liability.",
+      "where_in_return": "Tax computation summary, added after basic tax.",
+      "hi": "सेस आपके कुल टैक्स पर एक अतिरिक्त 4% शुल्क है।"
+    },
+    {
+      "term": "Surcharge",
+      "simple": "An extra charge on tax for high-income taxpayers, applying only above certain income thresholds (starts above Rs 50 lakh).",
+      "why_it_matters": "Not relevant for most first-time or middle-income filers, but significant for high earners.",
+      "where_in_return": "Tax computation summary.",
+      "hi": "अधिभार उच्च आय वाले करदाताओं के लिए टैक्स पर एक अतिरिक्त शुल्क है।"
+    },
+    {
+      "term": "Presumptive taxation (44AD/44ADA)",
+      "simple": "A simplified scheme where you declare a fixed percentage of your gross receipts as income (8-6% for business u/s44AD, 50% for specified professionals u/s44ADA) instead of tracking actual expenses.",
+      "why_it_matters": "Saves freelancers and small businesses from maintaining detailed books of account.",
+      "where_in_return": "Business/Profession schedule in ITR-4.",
+      "hi": "प्रिज़म्प्टिव टैक्सेशन एक सरल योजना है जिसमें सकल प्राप्तियों का एक निश्चित प्रतिशत आय के रूप में घोषित किया जाता है।"
+    },
+    {
+      "term": "Section 194J",
+      "simple": "The TDS section under which payers deduct tax (typically 10%) on fees paid for professional or technical services.",
+      "why_it_matters": "Often applied to freelance/consulting payments and sometimes, debatably, to internship stipends.",
+      "where_in_return": "Reflected in AIS/26AS as a TDS entry; doesn't by itself decide which ITR form to use.",
+      "hi": "धारा 194जे पेशेवर या तकनीकी सेवाओं के लिए भुगतान पर टीडीएस काटने का प्रावधान है।"
+    },
+    {
+      "term": "Section 194A",
+      "simple": "The TDS section under which banks/others deduct tax (typically 10%) on interest income other than savings account interest, e.g. FD interest.",
+      "why_it_matters": "Explains why your bank deducted tax on your fixed deposit interest.",
+      "where_in_return": "Reflected in AIS/26AS/Form 26AS as a TDS entry.",
+      "hi": "धारा 194ए बैंक जमा जैसे ब्याज आय पर टीडीएस काटने का प्रावधान है।"
+    },
+    {
+      "term": "Section 194 (dividend TDS)",
+      "simple": "The section under which companies/RTAs deduct TDS (typically 10%) on dividend payments above Rs 5,000 in a year from a single payer.",
+      "why_it_matters": "Small dividends (under Rs 5,000 from one company) usually have no TDS, but are still taxable income.",
+      "where_in_return": "Reflected in AIS as SFT-015 and, if TDS applies, in Form 26AS.",
+      "hi": "धारा 194 के तहत कंपनियां एक वित्तीय वर्ष में 5,000 रुपये से अधिक के डिविडेंड पर टीडीएस काटती हैं।"
+    },
+    {
+      "term": "Gross Total Income (GTI)",
+      "simple": "The sum of income from all five heads (salary, house property, business/profession, capital gains, other sources) before any Chapter VI-A deductions.",
+      "why_it_matters": "Deductions like 80C/80D are subtracted from GTI to arrive at Total Income.",
+      "where_in_return": "Computed automatically in the 'Total Income' section.",
+      "hi": "सकल कुल आय (जीटीआई) चैप्टर VI-ए कटौतियों से पहले सभी पांच आय के स्रोतों का योग है।"
+    },
+    {
+      "term": "Total Income (Taxable Income)",
+      "simple": "Gross Total Income minus all eligible Chapter VI-A deductions -- the figure your tax is actually calculated on.",
+      "why_it_matters": "This, not your salary or CTC, is the number that determines your tax slab.",
+      "where_in_return": "Computed automatically, shown just before the tax computation.",
+      "hi": "कुल आय (कर योग्य आय) जीटीआई में से सभी पात्र कटौतियों को घटाने के बाद बचती है।"
+    },
+    {
+      "term": "Advance tax",
+      "simple": "Tax paid in installments during the financial year (rather than as a lump sum at filing) when your total tax liability exceeds Rs 10,000 after TDS.",
+      "why_it_matters": "Missing advance tax installments attracts interest under sections 234B/234C.",
+      "where_in_return": "Taxes Paid schedule; also visible in Form 26AS as Type 'Advance Tax'.",
+      "hi": "अग्रिम कर वित्तीय वर्ष के दौरान किश्तों में भुगतान किया जाने वाला कर है।"
+    },
+    {
+      "term": "Self-assessment tax",
+      "simple": "Any remaining tax you pay yourself at the time of filing, after accounting for TDS and advance tax already paid.",
+      "why_it_matters": "You must pay this before filing, or your return may be treated as defective.",
+      "where_in_return": "Taxes Paid schedule -> Self-Assessment Tax (Challan 280).",
+      "hi": "स्व-निर्धारण कर वह शेष कर है जो आप रिटर्न दाखिल करते समय स्वयं भुगतान करते हैं।"
+    },
+    {
+      "term": "SFT (Statement of Financial Transaction)",
+      "simple": "Reports that banks, brokers, and other entities file with the tax department about specified high-value transactions, which feed into your AIS.",
+      "why_it_matters": "This is how the department knows about your dividends, share sales, and large deposits even before you file.",
+      "where_in_return": "Underlying source of most AIS entries (e.g. SFT-015 for dividend, SFT-017/018 for securities).",
+      "hi": "एसएफटी बैंकों और ब्रोकरों द्वारा दाखिल की जाने वाली रिपोर्ट है जो एआईएस में फीड होती है।"
+    }
+  ]
+}

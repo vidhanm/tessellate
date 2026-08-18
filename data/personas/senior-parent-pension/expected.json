@@ -1,0 +1,129 @@
+{
+  "correct_itr_form": "ITR-1",
+  "itr_form_reasoning": "Pension is taxed under 'Income from Salary' (treated as salary for tax purposes, eligible for standard deduction) and FD interest under 'Other Sources'. No capital gains, no business income, total income under Rs 50 lakh -- ITR-1 (Sahaj) applies.",
+  "alternative_interpretation": null,
+  "recommended_regime": "new",
+  "regime_comparison": {
+    "new_regime_tax": 0,
+    "old_regime_tax": 24960,
+    "note": "COMMON MISCONCEPTION CHECK: seniors often assume the old regime is automatically better because of the Rs 50,000 80TTB deduction on FD interest, which the new regime does not allow. But here, new regime's total income (Rs 5,95,000) is below its Rs 12,00,000 rebate threshold, so tax becomes nil even without 80TTB -- beating the old regime's Rs 24,960 (computed using senior-citizen slabs with a Rs 3,00,000 basic exemption plus 80TTB)."
+  },
+  "income_by_head": {
+    "salary": {
+      "pension_gross": 480000,
+      "standard_deduction": {
+        "new": 75000,
+        "old": 50000
+      }
+    },
+    "other_sources": {
+      "fd_interest": 190000,
+      "80TTB_deduction": {
+        "new": 0,
+        "old": 50000
+      }
+    },
+    "capital_gains": {
+      "stcg_111a": 0,
+      "ltcg_112a": 0
+    },
+    "business_profession": 0
+  },
+  "deductions_claimed": {
+    "standard_deduction": {
+      "new": 75000,
+      "old": 50000
+    },
+    "80TTB": {
+      "new": 0,
+      "old": 50000
+    }
+  },
+  "tax_computation": {
+    "new_regime": {
+      "pension": 480000,
+      "less_standard_deduction": 75000,
+      "salary_income": 405000,
+      "fd_interest": 190000,
+      "total_income": 595000,
+      "slab_tax": [
+        {
+          "slab": "0-4L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "4L-5.95L",
+          "rate": "5%",
+          "tax": 9750
+        }
+      ],
+      "tax_before_rebate": 9750,
+      "section_87A_rebate": 9750,
+      "tax_after_rebate": 0,
+      "cess_4pct": 0,
+      "total_tax": 0
+    },
+    "old_regime": {
+      "pension": 480000,
+      "less_standard_deduction": 50000,
+      "salary_income": 430000,
+      "fd_interest": 190000,
+      "less_80TTB": 50000,
+      "other_sources_net": 140000,
+      "total_income": 570000,
+      "senior_citizen_slabs_note": "Basic exemption Rs 3,00,000 for resident individuals aged 60-79 under the old regime",
+      "slab_tax": [
+        {
+          "slab": "0-3L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "3L-5L",
+          "rate": "5%",
+          "tax": 10000
+        },
+        {
+          "slab": "5L-5.7L",
+          "rate": "20%",
+          "tax": 14000
+        }
+      ],
+      "tax_before_rebate": 24000,
+      "section_87A_rebate": 0,
+      "cess_4pct": 960,
+      "total_tax": 24960
+    }
+  },
+  "tds_total": 19000,
+  "final_outcome": {
+    "type": "refund",
+    "amount": 19000,
+    "regime_used": "new"
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "80TTA_VS_80TTB_AGE",
+      "severity": "info",
+      "message": "Taxpayer is a senior citizen (63) -- eligible for 80TTB (up to Rs 50,000 on all bank/post-office interest) instead of 80TTA (up to Rs 10,000, savings interest only), but only under the OLD regime. Neither is available under the new regime."
+    },
+    {
+      "code": "SENIOR_REGIME_MISCONCEPTION",
+      "severity": "warning",
+      "message": "Do not assume old regime is automatically better for seniors due to 80TTB -- compute both. Here the new regime's Rs 12L rebate threshold gives a larger net benefit despite losing 80TTB."
+    },
+    {
+      "code": "PAN_AADHAAR_NOT_LINKED",
+      "severity": "info",
+      "message": "Not applicable -- already linked.",
+      "triggered": false
+    },
+    {
+      "code": "LOW_DIGITAL_LITERACY_HINDI_UI",
+      "severity": "info",
+      "message": "Persona prefers Hindi UI and has low digital literacy -- ensure simplified/Hindi-language guided flow is used for this filer."
+    }
+  ],
+  "expected_ais_mismatches": []
+}

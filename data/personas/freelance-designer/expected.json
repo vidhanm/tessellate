@@ -1,0 +1,127 @@
+{
+  "correct_itr_form": "ITR-4 (Sugam)",
+  "itr_form_reasoning": "Graphic/UI design is a notified profession eligible for presumptive taxation under section 44ADA. Gross receipts (Rs 11,00,000) are within the Rs 75,00,000 44ADA threshold (enhanced limit applies since >95% of receipts are via banking channels). No need to maintain books of account or get audited.",
+  "alternative_interpretation": null,
+  "recommended_regime": "new",
+  "regime_comparison": {
+    "new_regime_tax": 0,
+    "old_regime_tax": 17370,
+    "note": "New regime wins: presumptive income (Rs 5,50,000) plus interest (Rs 3,000) = Rs 5,53,000 total income, below the Rs 12,00,000 rebate threshold so slab tax is fully rebated to nil. Old regime's 80C/80D deductions (Rs 32,000) don't help enough to beat the new-regime rebate."
+  },
+  "income_by_head": {
+    "salary": 0,
+    "other_sources": 3000,
+    "capital_gains": {
+      "stcg_111a": 0,
+      "ltcg_112a": 0
+    },
+    "business_profession": {
+      "gross_receipts": 1100000,
+      "presumptive_rate": "50%",
+      "presumptive_income_44ADA": 550000
+    }
+  },
+  "deductions_claimed": {
+    "standard_deduction": 0,
+    "80C": {
+      "new": 0,
+      "old": 20000
+    },
+    "80D": {
+      "new": 0,
+      "old": 12000
+    }
+  },
+  "tax_computation": {
+    "new_regime": {
+      "presumptive_income": 550000,
+      "other_sources": 3000,
+      "total_income": 553000,
+      "slab_tax": [
+        {
+          "slab": "0-4L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "4L-5.53L",
+          "rate": "5%",
+          "tax": 7650
+        }
+      ],
+      "tax_before_rebate": 7650,
+      "section_87A_rebate": 7650,
+      "tax_after_rebate": 0,
+      "cess_4pct": 0,
+      "total_tax": 0
+    },
+    "old_regime": {
+      "presumptive_income": 550000,
+      "other_sources": 3000,
+      "gti": 553000,
+      "less_80C": 20000,
+      "less_80D": 12000,
+      "total_income": 521000,
+      "slab_tax": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "2.5L-5L",
+          "rate": "5%",
+          "tax": 12500
+        },
+        {
+          "slab": "5L-5.21L",
+          "rate": "20%",
+          "tax": 4200
+        }
+      ],
+      "tax_before_rebate": 16700,
+      "section_87A_rebate": 0,
+      "tax_after_rebate": 16700,
+      "cess_4pct": 668,
+      "total_tax": 17368,
+      "rounded_total_tax": 17370
+    }
+  },
+  "tds_total": 70000,
+  "final_outcome": {
+    "type": "refund",
+    "amount": 70000,
+    "regime_used": "new"
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "PRESUMPTIVE_44ADA_ELIGIBLE",
+      "severity": "info",
+      "message": "Gross receipts within 44ADA enhanced threshold (Rs 75L, cash receipts <=5%) -- presumptive scheme available and used."
+    },
+    {
+      "code": "GST_NOT_REGISTERED_BELOW_THRESHOLD",
+      "severity": "info",
+      "message": "Gross receipts Rs 11,00,000 are below the Rs 20,00,000 GST registration threshold for services -- no GST registration required."
+    },
+    {
+      "code": "TDS_CLAIMED_GT_26AS",
+      "severity": "error",
+      "message": "Not applicable to this persona -- TDS claimed matches Form 26AS exactly (Rs 70,000).",
+      "triggered": false
+    },
+    {
+      "code": "UNREPORTED_RECEIPTS_NO_TDS",
+      "severity": "warning",
+      "message": "Rs 4,00,000 of gross receipts had no TDS deducted and do not appear in AIS/26AS -- ensure these are still included in total gross receipts for 44ADA computation from your own invoices/bank records."
+    }
+  ],
+  "expected_ais_mismatches": [
+    {
+      "item": "Gross professional receipts",
+      "form16_or_declared": 1100000,
+      "ais": 700000,
+      "note": "AIS/26AS only shows the Rs 7,00,000 that had TDS deducted (194J); the remaining Rs 4,00,000 must be added from the taxpayer's own invoice records -- AIS is not exhaustive for freelancers."
+    }
+  ]
+}

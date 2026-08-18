@@ -1,0 +1,27 @@
+{
+  "slug": "first-job-dividend",
+  "name": "Demo Filer",
+  "age": 24,
+  "pan": "ZZAPD1234E",
+  "aadhaar": "9999 9999 0001",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "First job out of college, CTC ~9.5 LPA at a single employer for the full year. Has a small Zerodha demat account with dividend income of Rs 1,040 from 3 stocks and Rs 2,300 savings bank interest. No home loan. Contributes to EPF (80C). Hero persona for the ITR-1 flow; new tax regime works out better.",
+  "employment": {
+    "type": "salaried",
+    "employer_count": 1,
+    "ctc_lpa": 9.5
+  },
+  "language_pref": "en",
+  "digital_literacy": "medium",
+  "files": {
+    "form16": "personas/first-job-dividend/form16.json",
+    "ais": "personas/first-job-dividend/ais.json",
+    "form26as": "personas/first-job-dividend/form26as.json",
+    "bank": "personas/first-job-dividend/bank.json",
+    "broker": "personas/first-job-dividend/broker.csv",
+    "expected": "personas/first-job-dividend/expected.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "info_code": "TDS-192",
+      "description": "Salary",
+      "source": "Demo Tech Solutions Pvt Ltd (TAN ZZZD01234E)",
+      "amount": 920000,
+      "tds": 21000,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-015",
+      "description": "Dividend",
+      "source": "Zerodha Broking Ltd (RTA: Demo RTA Services)",
+      "amount": 1040,
+      "tds": 0,
+      "quarter": "Q3",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-016",
+      "description": "Interest from savings bank",
+      "source": "Demo Bank",
+      "amount": 2300,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-018",
+      "description": "Purchase/sale of securities",
+      "source": "Zerodha Broking Ltd",
+      "amount": 0,
+      "tds": 0,
+      "quarter": "Q2",
+      "status": "Active",
+      "note": "No sale transactions this FY; holdings only"
+    }
+  ]
+}

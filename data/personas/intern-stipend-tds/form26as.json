@@ -1,0 +1,21 @@
+{
+  "deductors": [
+    {
+      "name": "Demo Startup Labs Pvt Ltd",
+      "tan": "ZZZD09876G",
+      "section": "194J",
+      "quarterly": [
+        {
+          "quarter": "Q3",
+          "tds": 7500
+        },
+        {
+          "quarter": "Q4",
+          "tds": 7500
+        }
+      ],
+      "total_tds": 15000
+    }
+  ],
+  "total_tds_all_deductors": 15000
+}

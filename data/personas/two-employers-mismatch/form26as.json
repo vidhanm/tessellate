@@ -1,0 +1,37 @@
+{
+  "deductors": [
+    {
+      "name": "Demo Retail Ventures Pvt Ltd",
+      "tan": "ZZZD22110P",
+      "section": "192",
+      "quarterly": [
+        {
+          "quarter": "Q1",
+          "tds": 2000
+        },
+        {
+          "quarter": "Q2",
+          "tds": 2000
+        }
+      ],
+      "total_tds": 4000
+    },
+    {
+      "name": "Demo Fintech Labs Pvt Ltd",
+      "tan": "ZZZD33221R",
+      "section": "192",
+      "quarterly": [
+        {
+          "quarter": "Q3",
+          "tds": 5500
+        },
+        {
+          "quarter": "Q4",
+          "tds": 5500
+        }
+      ],
+      "total_tds": 11000
+    }
+  ],
+  "total_tds_all_deductors": 15000
+}

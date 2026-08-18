@@ -1,0 +1,144 @@
+{
+  "correct_itr_form": "ITR-2",
+  "itr_form_reasoning": "Taxpayer has capital gains (both STCG u/s 111A and LTCG u/s 112A) in addition to salary. ITR-1 does not permit any capital gains reporting; ITR-4 is for presumptive business/professional income only. ITR-2 is mandatory whenever there are capital gains and no business income.",
+  "alternative_interpretation": null,
+  "recommended_regime": "new",
+  "regime_comparison": {
+    "new_regime_tax": 65490,
+    "old_regime_tax": 130490,
+    "note": "New regime wins, but the margin is narrower than a simple salary-only comparison would suggest because the taxpayer fully utilises 80C (Rs 1,50,000) and 80D (Rs 25,000) under the old regime, and total income (~Rs 13.3L) exceeds the Rs 12L new-regime rebate threshold, so the 87A rebate does not wipe out the new-regime slab tax the way it would for a lower-income filer."
+  },
+  "income_by_head": {
+    "salary": 1175000,
+    "other_sources": 0,
+    "capital_gains": {
+      "stcg_111a": 18000,
+      "ltcg_112a_gross": 140000,
+      "ltcg_112a_exemption": 125000,
+      "ltcg_112a_taxable": 15000,
+      "grandfathering_note": "DEMONIFTYIDX units bought 2017-08-10 (pre-31-Jan-2018): cost of acquisition for LTCG purposes = higher of actual cost (Rs 24,000) and FMV as on 31-Jan-2018 (Rs 33,000, i.e. 300 units x Rs 110), capped at sale value -- so grandfathered cost = Rs 33,000."
+    },
+    "business_profession": 0
+  },
+  "deductions_claimed": {
+    "standard_deduction": {
+      "new": 75000,
+      "old": 50000
+    },
+    "80C": {
+      "new": 0,
+      "old": 150000
+    },
+    "80D": {
+      "new": 0,
+      "old": 25000
+    }
+  },
+  "tax_computation": {
+    "new_regime": {
+      "gross_salary": 1250000,
+      "less_standard_deduction": 75000,
+      "salary_income": 1175000,
+      "stcg_111a": 18000,
+      "ltcg_112a_taxable": 15000,
+      "total_income": 1208000,
+      "slab_tax_on_salary": [
+        {
+          "slab": "0-4L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "4L-8L",
+          "rate": "5%",
+          "tax": 20000
+        },
+        {
+          "slab": "8L-11.75L",
+          "rate": "10%",
+          "tax": 37500
+        }
+      ],
+      "slab_tax_subtotal": 57500,
+      "stcg_tax_20pct": 3600,
+      "ltcg_tax_12_5pct": 1875,
+      "section_87A_rebate": 0,
+      "rebate_note": "Total income (Rs 12,08,000) exceeds the Rs 12,00,000 rebate threshold, AND per the amended section 87A proviso, the rebate cannot in any case be applied to tax on STCG u/s 111A or LTCG u/s 112A -- only to slab-rate income tax.",
+      "tax_before_cess": 62975,
+      "cess_4pct": 2519,
+      "total_tax": 65494,
+      "rounded_total_tax": 65490
+    },
+    "old_regime": {
+      "gross_salary": 1250000,
+      "less_standard_deduction": 50000,
+      "less_80C": 150000,
+      "less_80D": 25000,
+      "salary_income": 1025000,
+      "stcg_111a": 18000,
+      "ltcg_112a_taxable": 15000,
+      "total_income": 1058000,
+      "slab_tax_on_salary": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "2.5L-5L",
+          "rate": "5%",
+          "tax": 12500
+        },
+        {
+          "slab": "5L-10L",
+          "rate": "20%",
+          "tax": 100000
+        },
+        {
+          "slab": "10L-10.25L",
+          "rate": "30%",
+          "tax": 7500
+        }
+      ],
+      "slab_tax_subtotal": 120000,
+      "stcg_tax_20pct": 3600,
+      "ltcg_tax_12_5pct": 1875,
+      "section_87A_rebate": 0,
+      "tax_before_cess": 125475,
+      "cess_4pct": 5019,
+      "total_tax": 130494,
+      "rounded_total_tax": 130490
+    }
+  },
+  "tds_total": 65500,
+  "final_outcome": {
+    "type": "refund",
+    "amount": 10,
+    "regime_used": "new",
+    "note": "TDS Rs 65,500 vs final new-regime liability Rs 65,490 -- a token Rs 10 refund; essentially a wash. Illustrates that TDS deducted assuming a rough new-regime salary computation was very close to the actual liability once capital gains are added."
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "LTCG_112A_ABOVE_125K",
+      "severity": "info",
+      "message": "LTCG under section 112A (Rs 1,40,000) exceeds the Rs 1,25,000 exemption; Rs 15,000 is taxable at 12.5%."
+    },
+    {
+      "code": "GRANDFATHERING_PRE_2018_UNITS",
+      "severity": "info",
+      "message": "One holding (DEMONIFTYIDX) was acquired before 31-Jan-2018 -- grandfathered cost basis (FMV as on 31-Jan-2018) applies instead of actual purchase cost."
+    },
+    {
+      "code": "ITR_FORM_MISMATCH_CG_ON_ITR1",
+      "severity": "error",
+      "message": "Capital gains present -- ITR-1 cannot be used. Confirmed ITR-2 is required.",
+      "triggered_if_wrong_form_selected": true
+    },
+    {
+      "code": "REBATE_87A_NOT_APPLICABLE_TO_CG",
+      "severity": "warning",
+      "message": "Section 87A rebate does not apply to tax computed on STCG (111A) or LTCG (112A), even when total income is below the rebate threshold -- a frequently misunderstood point."
+    }
+  ],
+  "expected_ais_mismatches": []
+}

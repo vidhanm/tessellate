@@ -1,0 +1,152 @@
+{
+  "correct_itr_form": "ITR-1",
+  "itr_form_reasoning": "Only salary income (from two employers, combined) plus small savings interest; no capital gains, no business income, total income well under Rs 50 lakh. ITR-1 applies, but the two-employer combination must be done manually in the 'Salary' schedule -- the portal does not auto-merge two Form 16s.",
+  "alternative_interpretation": null,
+  "recommended_regime": "old",
+  "regime_comparison": {
+    "new_regime_tax": null,
+    "old_regime_tax": 65000,
+    "note": "Old regime chosen for HRA + 80C + 80D. If computed correctly (single Rs 50,000 standard deduction, not one per employer), old regime tax is Rs 65,000. THE COMMON ERROR: naively summing both Form 16 'taxable income' figures (Rs 3,35,000 + Rs 3,65,000 = Rs 7,00,000) double-counts the standard deduction, understating tax by about Rs 10,400 -- this is exactly what triggers the 143(1) demand notice for this persona (see notices/143_1_demand_persona5.json)."
+  },
+  "income_by_head": {
+    "salary": {
+      "employer_a_gross": 500000,
+      "employer_b_gross": 550000,
+      "combined_gross": 1050000,
+      "hra_exemption_combined": 85000,
+      "standard_deduction_correct_single": 50000
+    },
+    "other_sources": 1800,
+    "capital_gains": {
+      "stcg_111a": 0,
+      "ltcg_112a": 0
+    },
+    "business_profession": 0
+  },
+  "deductions_claimed": {
+    "standard_deduction": {
+      "correct": 50000,
+      "erroneous_if_both_form16_summed": 100000
+    },
+    "80C": 150000,
+    "80D": 15000,
+    "hra_exemption": 85000
+  },
+  "tax_computation": {
+    "correct_old_regime": {
+      "combined_gross_salary": 1050000,
+      "less_hra_exemption": 85000,
+      "less_standard_deduction": 50000,
+      "less_80C": 150000,
+      "less_80D": 15000,
+      "salary_income": 750000,
+      "other_sources": 1800,
+      "total_income": 751800,
+      "rounded_total_income": 751800,
+      "slab_tax": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "2.5L-5L",
+          "rate": "5%",
+          "tax": 12500
+        },
+        {
+          "slab": "5L-7.518L",
+          "rate": "20%",
+          "tax": 50360
+        }
+      ],
+      "tax_before_rebate": 62860,
+      "section_87A_rebate": 0,
+      "cess_4pct": 2514,
+      "total_tax": 65374,
+      "rounded_total_tax": 65370,
+      "note_simplified_in_summary_as": 65000
+    },
+    "erroneous_taxpayer_filed_return": {
+      "description": "Taxpayer sums both Form 16 std deductions (50,000+50,000=1,00,000) instead of allowing only one",
+      "combined_gross_salary": 1050000,
+      "less_hra_exemption": 85000,
+      "less_standard_deduction_erroneous": 100000,
+      "less_80C": 150000,
+      "less_80D": 15000,
+      "salary_income": 700000,
+      "other_sources": 1800,
+      "total_income": 701800,
+      "slab_tax": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "2.5L-5L",
+          "rate": "5%",
+          "tax": 12500
+        },
+        {
+          "slab": "5L-7.018L",
+          "rate": "20%",
+          "tax": 40360
+        }
+      ],
+      "tax_before_rebate": 52860,
+      "cess_4pct": 2114,
+      "total_tax": 54974,
+      "rounded_total_tax": 54970
+    },
+    "cpc_recomputation_143_1": {
+      "adjustment": "CPC disallows the extra Rs 50,000 standard deduction (system allows only one per PAN per year)",
+      "additional_income_added_back": 50000,
+      "additional_tax_and_cess": 10400,
+      "interest_234b_234c_estimate": 260,
+      "total_demand": 10660
+    }
+  },
+  "tds_total": 15000,
+  "final_outcome": {
+    "type": "demand_if_filed_erroneously",
+    "amount": 10660,
+    "regime_used": "old",
+    "correct_outcome_if_filed_properly": {
+      "type": "demand",
+      "amount": 50370,
+      "note": "Even filed correctly, TDS Rs 15,000 is well short of the correct Rs 65,370 liability (both employers under-withheld because each only saw its own 6-month income) -- self-assessment tax of roughly Rs 50,370 plus interest is due regardless of the standard-deduction error."
+    }
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "TWO_EMPLOYERS_DOUBLE_STD_DEDUCTION",
+      "severity": "error",
+      "message": "Two Form 16s both claim a full standard deduction. Only Rs 50,000 (old regime) / Rs 75,000 (new regime) is allowed per person per year, not once per employer. Combine salary income manually before entering it."
+    },
+    {
+      "code": "TDS_CLAIMED_LT_ACTUAL_LIABILITY",
+      "severity": "warning",
+      "message": "Combined TDS from both employers (Rs 15,000) is far below the correct tax liability (~Rs 65,370) because neither employer accounted for the other's income -- expect a significant self-assessment tax payment, not a refund."
+    },
+    {
+      "code": "AIS_SALARY_SPLIT_ACROSS_EMPLOYERS",
+      "severity": "info",
+      "message": "AIS correctly shows two separate 192 salary entries (Rs 5,00,000 and Rs 5,50,000); combine them into a single 'Salary' schedule with multiple employer rows in the ITR."
+    },
+    {
+      "code": "EVERIFY_PENDING",
+      "severity": "warning",
+      "message": "Return is not valid until e-Verified within 30 days of filing.",
+      "triggered": false
+    }
+  ],
+  "expected_ais_mismatches": [
+    {
+      "item": "Standard deduction",
+      "form16_or_declared": 100000,
+      "ais": "n/a (AIS does not carry deductions)",
+      "note": "Not strictly an AIS mismatch but a cross-Form-16 reconciliation error -- the two Form 16 'taxable income as per employer' figures cannot simply be added; the standard deduction must be applied only once when merging."
+    }
+  ]
+}

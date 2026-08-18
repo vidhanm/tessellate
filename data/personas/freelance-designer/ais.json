@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "info_code": "TDS-194J",
+      "description": "Fee for professional or technical services",
+      "source": "Demo Brandworks Pvt Ltd (TAN ZZZD11223L)",
+      "amount": 450000,
+      "tds": 45000,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    },
+    {
+      "info_code": "TDS-194J",
+      "description": "Fee for professional or technical services",
+      "source": "Demo Studio Nine LLP (TAN ZZZD44556M)",
+      "amount": 250000,
+      "tds": 25000,
+      "quarter": "Q2-Q3",
+      "status": "Active"
+    },
+    {
+      "info_code": "SFT-NA",
+      "description": "Receipts without TDS (below threshold or individual clients)",
+      "source": "Multiple individual/small clients",
+      "amount": 400000,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Not reported via TDS -- self-declared from invoices"
+    },
+    {
+      "info_code": "SFT-016",
+      "description": "Interest from savings bank",
+      "source": "Demo Bank",
+      "amount": 3000,
+      "tds": 0,
+      "quarter": "Q1-Q4",
+      "status": "Active"
+    }
+  ]
+}

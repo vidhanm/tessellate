@@ -1,0 +1,27 @@
+{
+  "slug": "intern-stipend-tds",
+  "name": "Demo Filer",
+  "age": 22,
+  "pan": "ZZBPD2345F",
+  "aadhaar": "9999 9999 0002",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "Final-year student who did a 6-month internship (Oct 2025-Mar 2026) at a startup, paid Rs 25,000/month stipend with 10% TDS deducted under section 194J (professional fees) because the company treated the intern as a consultant rather than an employee. No Form 16 was issued (only 26AS/AIS). Refund is due either way, but the correct ITR form is genuinely debatable.",
+  "employment": {
+    "type": "intern",
+    "stipend_monthly": 25000,
+    "months": 6,
+    "tds_section": "194J"
+  },
+  "language_pref": "en",
+  "digital_literacy": "medium",
+  "files": {
+    "form16": "personas/intern-stipend-tds/form16.json",
+    "ais": "personas/intern-stipend-tds/ais.json",
+    "form26as": "personas/intern-stipend-tds/form26as.json",
+    "bank": "personas/intern-stipend-tds/bank.json",
+    "expected": "personas/intern-stipend-tds/expected.json"
+  }
+}

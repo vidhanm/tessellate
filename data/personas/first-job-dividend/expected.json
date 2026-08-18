@@ -1,0 +1,130 @@
+{
+  "correct_itr_form": "ITR-1",
+  "itr_form_reasoning": "Only salary income and income from other sources (dividend + savings interest), total income well under Rs 50 lakh, no capital gains realised this year (only dividends, no share sales), single house property (none owned). ITR-1 (Sahaj) applies.",
+  "alternative_interpretation": null,
+  "recommended_regime": "new",
+  "regime_comparison": {
+    "new_regime_tax": 0,
+    "old_regime_tax": 80260,
+    "note": "New regime wins decisively: total income (Rs 8,48,340) is below the Rs 12,00,000 section 87A rebate threshold for FY2025-26, so slab tax of Rs 24,834 is fully rebated to nil. Old regime, even after Rs 50,000 80C (EPF), gives taxable income Rs 8,23,340 and tax of Rs 80,260 because its 87A rebate threshold is only Rs 5,00,000."
+  },
+  "income_by_head": {
+    "salary": 845000,
+    "other_sources": {
+      "dividend": 1040,
+      "savings_interest": 2300,
+      "total": 3340
+    },
+    "capital_gains": {
+      "stcg_111a": 0,
+      "ltcg_112a": 0
+    },
+    "business_profession": 0
+  },
+  "deductions_claimed": {
+    "standard_deduction": 75000,
+    "80C": 0,
+    "80D": 0,
+    "note": "80C/80D not claimed under new regime as they are not allowed (except 80CCD(2))"
+  },
+  "tax_computation": {
+    "new_regime": {
+      "gross_salary": 920000,
+      "less_standard_deduction": 75000,
+      "salary_income": 845000,
+      "other_sources": 3340,
+      "total_income": 848340,
+      "slab_tax": [
+        {
+          "slab": "0-4L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "4L-8L",
+          "rate": "5%",
+          "tax": 20000
+        },
+        {
+          "slab": "8L-8,48,340",
+          "rate": "10%",
+          "tax": 4834
+        }
+      ],
+      "tax_before_rebate": 24834,
+      "section_87A_rebate": 24834,
+      "tax_after_rebate": 0,
+      "cess_4pct": 0,
+      "total_tax": 0
+    },
+    "old_regime": {
+      "gross_salary": 920000,
+      "less_standard_deduction": 50000,
+      "less_80C": 50000,
+      "salary_income": 820000,
+      "other_sources": 3340,
+      "total_income": 823340,
+      "slab_tax": [
+        {
+          "slab": "0-2.5L",
+          "rate": "0%",
+          "tax": 0
+        },
+        {
+          "slab": "2.5L-5L",
+          "rate": "5%",
+          "tax": 12500
+        },
+        {
+          "slab": "5L-8,23,340",
+          "rate": "20%",
+          "tax": 64668
+        }
+      ],
+      "tax_before_rebate": 77168,
+      "section_87A_rebate": 0,
+      "tax_after_rebate": 77168,
+      "cess_4pct": 3087,
+      "total_tax": 80255,
+      "rounded_total_tax": 80260
+    }
+  },
+  "tds_total": 21000,
+  "final_outcome": {
+    "type": "refund",
+    "amount": 21000,
+    "regime_used": "new"
+  },
+  "expected_preflight_findings": [
+    {
+      "code": "AIS_DIVIDEND_NOT_DECLARED",
+      "severity": "warning",
+      "message": "AIS shows Rs 1,040 dividend income (SFT-015) from Zerodha holdings that is commonly missed by first-time filers who only copy Form 16 salary figures. Must be declared under Income from Other Sources."
+    },
+    {
+      "code": "AIS_INTEREST_NOT_DECLARED",
+      "severity": "info",
+      "message": "AIS shows Rs 2,300 savings bank interest (SFT-016) from Demo Bank. Include under Other Sources; eligible for 80TTA deduction (up to Rs 10,000) only under the old regime."
+    },
+    {
+      "code": "PAN_AADHAAR_NOT_LINKED",
+      "severity": "info",
+      "message": "Not applicable to this persona; PAN-Aadhaar already linked.",
+      "triggered": false
+    }
+  ],
+  "expected_ais_mismatches": [
+    {
+      "item": "Dividend income",
+      "form16_or_declared": 0,
+      "ais": 1040,
+      "note": "Not on Form 16 (it's not salary); risk that a naive filer leaves this at Rs 0 in the draft return instead of pulling from AIS."
+    },
+    {
+      "item": "Savings interest",
+      "form16_or_declared": 0,
+      "ais": 2300,
+      "note": "Same risk as dividend â€” must be manually added under Other Sources."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "freelance-designer",
+  "name": "Demo Filer",
+  "age": 27,
+  "pan": "ZZDPD4567K",
+  "aadhaar": "9999 9999 0004",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "Independent graphic/UI designer with Rs 11,00,000 gross receipts from multiple clients. Some clients deducted 194J TDS, others paid without any TDS. Files under presumptive taxation (44ADA) as a notified profession. Not registered under GST (receipts below the Rs 20 lakh threshold for services).",
+  "employment": {
+    "type": "freelance",
+    "profession": "graphic/UI design",
+    "gross_receipts": 1100000,
+    "gst_registered": false
+  },
+  "language_pref": "en",
+  "digital_literacy": "high",
+  "files": {
+    "form16": "personas/freelance-designer/form16.json",
+    "ais": "personas/freelance-designer/ais.json",
+    "form26as": "personas/freelance-designer/form26as.json",
+    "bank": "personas/freelance-designer/bank.json",
+    "expected": "personas/freelance-designer/expected.json"
+  }
+}

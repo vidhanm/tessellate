@@ -1,0 +1,193 @@
+{
+  "checks": [
+    {
+      "code": "AIS_DIVIDEND_NOT_DECLARED",
+      "name": "Dividend in AIS not declared",
+      "severity": "warning",
+      "description": "AIS shows dividend income (SFT-015) that is not present in the taxpayer's draft return under Other Sources.",
+      "triggered_by_persona": "first-job-dividend",
+      "plain_language": "The tax department already knows about a dividend you received (from your broker/RTA) but your return currently shows Rs 0 for it.",
+      "remedy": "Add the dividend amount under 'Income from Other Sources' -> 'Dividend' before filing."
+    },
+    {
+      "code": "AIS_INTEREST_NOT_DECLARED",
+      "name": "Interest in AIS not declared",
+      "severity": "warning",
+      "description": "AIS shows savings/FD interest that is not present in the draft return.",
+      "triggered_by_persona": "first-job-dividend",
+      "plain_language": "Your bank reported interest paid to you, but it's missing from your return.",
+      "remedy": "Add the interest amount under Other Sources; claim 80TTA/80TTB if eligible and using the old regime."
+    },
+    {
+      "code": "TDS_CLAIMED_GT_26AS",
+      "name": "TDS claimed exceeds Form 26AS",
+      "severity": "error",
+      "description": "The TDS amount claimed in the return is higher than what is reflected in Form 26AS for the same deductor/section.",
+      "triggered_by_persona": null,
+      "plain_language": "You're asking for credit for more tax already deducted than the department's records show was actually deposited.",
+      "remedy": "Reconcile with Form 26AS; if a deductor hasn't deposited/reported TDS yet, follow up with them before filing, or claim only the reflected amount."
+    },
+    {
+      "code": "TWO_EMPLOYERS_DOUBLE_STD_DEDUCTION",
+      "name": "Standard deduction claimed twice",
+      "severity": "error",
+      "description": "Multiple Form 16s each show a full standard deduction; only one standard deduction is allowed per assessee per year.",
+      "triggered_by_persona": "two-employers-mismatch",
+      "plain_language": "You changed jobs, and both employers each gave you the full Rs 50,000/75,000 standard deduction -- but you're only allowed to claim it once in total.",
+      "remedy": "When combining salary from multiple employers, apply the standard deduction only once in the consolidated Salary schedule."
+    },
+    {
+      "code": "BANK_NOT_PREVALIDATED",
+      "name": "Refund bank account not prevalidated",
+      "severity": "error",
+      "description": "No bank account linked to the PAN is prevalidated and nominated for refund.",
+      "triggered_by_persona": "intern-stipend-tds",
+      "plain_language": "Even if you're owed a refund, the department can't pay it into an account that hasn't been verified on the portal.",
+      "remedy": "Go to 'My Bank Account' on the e-filing portal, add the account, and complete prevalidation before or right after filing."
+    },
+    {
+      "code": "ITR_FORM_MISMATCH_CG_ON_ITR1",
+      "name": "Capital gains present but ITR-1 selected",
+      "severity": "error",
+      "description": "Taxpayer has capital gains (STCG/LTCG) but has selected or drafted ITR-1, which does not support capital gains reporting.",
+      "triggered_by_persona": "salaried-capital-gains",
+      "plain_language": "ITR-1 is the simplest form, but it cannot be used at all if you sold any shares or mutual fund units at a gain -- you must use ITR-2.",
+      "remedy": "Switch to ITR-2 (or ITR-3 if you also have business income) and report gains in the Capital Gains schedule."
+    },
+    {
+      "code": "EVERIFY_PENDING",
+      "name": "Return not e-Verified",
+      "severity": "warning",
+      "description": "Return has been filed but not yet e-Verified within the 30-day window.",
+      "triggered_by_persona": null,
+      "plain_language": "Filing isn't the last step -- an unverified return is treated as if it was never filed at all after 30 days.",
+      "remedy": "e-Verify immediately via Aadhaar OTP, net banking, or by sending a signed ITR-V to CPC Bengaluru."
+    },
+    {
+      "code": "PAN_AADHAAR_NOT_LINKED",
+      "name": "PAN not linked with Aadhaar",
+      "severity": "error",
+      "description": "PAN is inoperative because it has not been linked to Aadhaar.",
+      "triggered_by_persona": null,
+      "plain_language": "If your PAN and Aadhaar aren't linked, your PAN becomes inoperative and you cannot file or get refunds processed.",
+      "remedy": "Link PAN-Aadhaar on the e-filing portal (fee may apply) before filing."
+    },
+    {
+      "code": "HRA_CLAIMED_NEW_REGIME",
+      "name": "HRA exemption claimed under new regime",
+      "severity": "error",
+      "description": "HRA exemption (section 10(13A)) claimed while new tax regime is selected; not permitted under the new regime.",
+      "triggered_by_persona": null,
+      "plain_language": "HRA exemption is an old-regime-only benefit -- it can't be claimed if you've opted for the new regime.",
+      "remedy": "Either switch to the old regime to claim HRA, or remove the HRA claim if staying in the new regime."
+    },
+    {
+      "code": "80TTA_VS_80TTB_AGE",
+      "name": "Wrong interest deduction section for age",
+      "severity": "warning",
+      "description": "Taxpayer aged 60+ claims 80TTA (max Rs 10,000, savings interest only) instead of the more generous 80TTB (max Rs 50,000, all bank/post office interest) available to senior citizens.",
+      "triggered_by_persona": "senior-parent-pension",
+      "plain_language": "If you're 60 or older, you get a bigger interest deduction (80TTB, up to Rs 50,000, includes FD interest) -- don't limit yourself to the smaller 80TTA.",
+      "remedy": "Use 80TTB instead of 80TTA when the taxpayer is 60 or older and has chosen the old regime."
+    },
+    {
+      "code": "LTCG_112A_ABOVE_125K",
+      "name": "LTCG 112A exceeds exemption",
+      "severity": "info",
+      "description": "Long-term capital gains on listed equity/equity MF (section 112A) exceed the Rs 1,25,000 annual exemption.",
+      "triggered_by_persona": "salaried-capital-gains",
+      "plain_language": "The first Rs 1,25,000 of long-term gains on shares/equity funds each year is tax-free; anything above that is taxed at 12.5%.",
+      "remedy": "No remedy needed -- just ensure the exemption is applied correctly and only the excess is taxed."
+    },
+    {
+      "code": "REBATE_87A_NOT_APPLICABLE_TO_CG",
+      "name": "87A rebate wrongly applied to capital gains tax",
+      "severity": "warning",
+      "description": "Section 87A rebate has been applied to reduce tax computed on STCG (111A) or LTCG (112A), which is not permitted even if total income is within the rebate threshold.",
+      "triggered_by_persona": "salaried-capital-gains",
+      "plain_language": "The 'up to Rs 12L = zero tax' rebate does not cover tax on gains from selling shares/mutual funds -- that portion is taxed regardless of your total income.",
+      "remedy": "Recompute rebate to apply only to tax on slab-rate (non-capital-gains) income."
+    },
+    {
+      "code": "ITR_FORM_AMBIGUOUS_194J_STIPEND",
+      "name": "194J stipend -- ITR form ambiguity",
+      "severity": "warning",
+      "description": "Income received with 194J TDS looks like an internship/training stipend rather than genuine independent professional income.",
+      "triggered_by_persona": "intern-stipend-tds",
+      "plain_language": "Your stipend had 'professional fees' tax deducted, but you weren't really running an independent profession -- there's a genuine choice of how to report this.",
+      "remedy": "Report as Other Sources (ITR-1, simplest) or as presumptive professional income u/s 44ADA (ITR-4) -- either can be defensible; pick one and stay consistent for future references to this income."
+    },
+    {
+      "code": "GST_NOT_REGISTERED_BELOW_THRESHOLD",
+      "name": "GST registration check for freelancers",
+      "severity": "info",
+      "description": "Freelancer/professional gross receipts are below the Rs 20,00,000 GST registration threshold for services.",
+      "triggered_by_persona": "freelance-designer",
+      "plain_language": "You don't need to register for GST as long as your total professional receipts stay under Rs 20 lakh a year.",
+      "remedy": "No action needed unless receipts approach the threshold; monitor annually."
+    },
+    {
+      "code": "UNREPORTED_RECEIPTS_NO_TDS",
+      "name": "Gross receipts exceed AIS/26AS total",
+      "severity": "warning",
+      "description": "Taxpayer's actual gross receipts (per invoices) exceed the amount reflected in AIS/26AS because some clients did not deduct or report TDS.",
+      "triggered_by_persona": "freelance-designer",
+      "plain_language": "AIS only shows income where someone deducted TDS and reported it -- cash or no-TDS clients won't show up, but you must still declare all your income.",
+      "remedy": "Maintain your own invoice/receipt records and declare total gross receipts, not just the AIS figure."
+    },
+    {
+      "code": "TDS_CLAIMED_LT_ACTUAL_LIABILITY",
+      "name": "TDS well below computed tax liability",
+      "severity": "warning",
+      "description": "Total TDS credited is materially lower than the computed final tax liability, often due to multiple employers/payers each under-withholding independently.",
+      "triggered_by_persona": "two-employers-mismatch",
+      "plain_language": "Each of your employers only withheld tax as if you earned that much from them alone -- combined, you likely owe more tax than was deducted.",
+      "remedy": "Compute self-assessment tax due and pay it (Challan 280) before filing to avoid interest u/s 234B/234C."
+    },
+    {
+      "code": "SENIOR_REGIME_MISCONCEPTION",
+      "name": "Old-regime-by-default assumption for seniors",
+      "severity": "warning",
+      "description": "Senior citizen defaults to old regime assuming 80TTB makes it automatically better, without comparing to the new regime's higher rebate threshold.",
+      "triggered_by_persona": "senior-parent-pension",
+      "plain_language": "Even senior citizens should compute both regimes -- the new regime's Rs 12 lakh rebate threshold can outweigh losing old-regime deductions like 80TTB.",
+      "remedy": "Always run both computations before choosing a regime, regardless of age-based deductions available."
+    },
+    {
+      "code": "NO_FORM16_INCOME_ONLY_26AS",
+      "name": "No Form 16 issued for this income",
+      "severity": "info",
+      "description": "No Form 16 is available for some or all income (e.g. professional fees, pension without employer, freelance receipts); rely on AIS/26AS and own records.",
+      "triggered_by_persona": "intern-stipend-tds",
+      "plain_language": "Not every kind of income comes with a Form 16 -- for freelance, stipend, or pension income, check AIS/26AS and your own payment records instead.",
+      "remedy": "Cross-check income figures against bank statements/invoices in addition to AIS/26AS."
+    },
+    {
+      "code": "GRANDFATHERING_PRE_2018_UNITS",
+      "name": "Pre-31-Jan-2018 equity holdings need grandfathered cost",
+      "severity": "info",
+      "description": "Equity/equity MF units acquired before 31-Jan-2018 must use the higher of actual cost and FMV as on 31-Jan-2018 (capped at sale value) as the cost of acquisition for LTCG.",
+      "triggered_by_persona": "salaried-capital-gains",
+      "plain_language": "For old share/mutual fund holdings bought before 31 Jan 2018, the taxable gain is calculated using a special 'grandfathered' cost, not just your original purchase price.",
+      "remedy": "Use the FMV as on 31-Jan-2018 (if higher than actual cost, capped at sale price) when computing LTCG for such holdings."
+    },
+    {
+      "code": "LOW_DIGITAL_LITERACY_HINDI_UI",
+      "name": "Simplified/regional-language UI needed",
+      "severity": "info",
+      "description": "Taxpayer profile indicates low digital literacy and/or a preference for a regional language UI.",
+      "triggered_by_persona": "senior-parent-pension",
+      "plain_language": "Some filers will need a simpler, guided experience in their preferred language rather than the standard flow.",
+      "remedy": "Route to a simplified/guided flow with Hindi (or other regional language) UI and larger-format prompts."
+    },
+    {
+      "code": "AIS_SALARY_SPLIT_ACROSS_EMPLOYERS",
+      "name": "Salary reported separately per employer in AIS",
+      "severity": "info",
+      "description": "AIS shows separate salary/TDS entries per employer (section 192); these need manual consolidation into one Salary schedule.",
+      "triggered_by_persona": "two-employers-mismatch",
+      "plain_language": "If you had two jobs in the year, AIS lists each employer's payment separately -- you must combine them yourself when filling in your return.",
+      "remedy": "Add both employers as separate rows within the same Salary schedule in the ITR form; apply standard deduction only once overall."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "senior-parent-pension",
+  "name": "Demo Filer (Senior)",
+  "name_hi": "डेमो फाइलर (वरिष्ठ नागरिक)",
+  "age": 63,
+  "pan": "ZZFPD6789T",
+  "aadhaar": "9999 9999 0006",
+  "aadhaar_pan_linked": true,
+  "fy": "2025-26",
+  "ay": "2026-27",
+  "residential_status": "Resident",
+  "narrative": "Retired senior citizen (63) with pension income of Rs 4,80,000/year and fixed deposit interest of Rs 1,90,000 (194A TDS deducted by the bank). Low digital literacy, prefers the Hindi UI. Filing purely to claim a TDS refund. Common misconception: seniors assume the old regime is always best because of 80TTB, but here the new regime's higher 87A rebate threshold (Rs 12L) actually gives a bigger refund.",
+  "employment": {
+    "type": "senior-pensioner",
+    "pension_annual": 480000,
+    "fd_interest_annual": 190000
+  },
+  "language_pref": "hi",
+  "digital_literacy": "low",
+  "files": {
+    "form16": "personas/senior-parent-pension/form16.json",
+    "ais": "personas/senior-parent-pension/ais.json",
+    "form26as": "personas/senior-parent-pension/form26as.json",
+    "bank": "personas/senior-parent-pension/bank.json",
+    "expected": "personas/senior-parent-pension/expected.json"
+  }
+}

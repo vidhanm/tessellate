@@ -1,0 +1,29 @@
+{
+  "deductors": [
+    {
+      "name": "Demo Consulting Group Pvt Ltd",
+      "tan": "ZZZD05566H",
+      "section": "192",
+      "quarterly": [
+        {
+          "quarter": "Q1",
+          "tds": 16375
+        },
+        {
+          "quarter": "Q2",
+          "tds": 16375
+        },
+        {
+          "quarter": "Q3",
+          "tds": 16375
+        },
+        {
+          "quarter": "Q4",
+          "tds": 16375
+        }
+      ],
+      "total_tds": 65500
+    }
+  ],
+  "total_tds_all_deductors": 65500
+}
